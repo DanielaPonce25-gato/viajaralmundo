@@ -1,0 +1,34 @@
+[   
+{                      
+  "id": 1,                           
+  "lugar": "Bahamas",
+  "imagen": "ford_fiesta_1.jpg",
+  "descripcion": "",
+  "Precio": 17650000,
+  "millasacumulables": 30000
+ },
+ {
+    "id": 2,                           
+    "lugar": "Colombia",
+    "imagen": "ford_fiesta_1.jpg",
+    "descripcion": "",
+    "precio": 18000000,
+    "millasacumulables": 70000
+   },
+ {
+  "id": 3,
+  "lugar": "Dubai",
+  "imagen": "ford_fiesta_1.jpg",
+  "descripcion": "",
+  "precio": 19450000,
+  "millasacumulables": 340000
+   },
+ {
+  "id": 4,
+  "lugar": "Chile",
+  "imagen": "ford_fiesta_1.jpg",
+  "descripcion": "",
+  "precio": 29000000,
+  "millasacumulables": 450000
+   }
+]

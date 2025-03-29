@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos</title>
+    <link rel="stylesheet" href="/css/destinos.css">
+</head>
+<body>
+    <main>
+        <h1>Conoce el mundo con nosotros</h1>
+
+        <ul class="producto-lista">
+            <% productos.forEach(producto => { %>
+               <li>                                  <!-- estoy consumiendo los productos guardados en productos.json -->
+                   <div><%= producto.lugar %></div>
+                   <div><%= producto.imagen %></div>
+                   <div><%= producto.descripcion %></div>
+                   <div><%= producto.precio %></div>
+                   <div><%= producto.millasacumulables %></div>
+            
+                  <!-- <div class="form-container">
+                     <a href="/<%=producto.id%>/edit">Editar</a>
+                     <a href="/<%=producto.id%>/delete">Eliminar</a>
+                  </div> -->
+            
+                
+                </li>
+           <% }) %>
+        </ul>
+    </main>
+
+</body>
+</html>

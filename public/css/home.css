@@ -1,0 +1,508 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+include {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    
+}
+
+.fonlis2{
+    background-color: rgb(218, 216, 216);
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+.icon{
+    margin-top: 17px;
+    height: 25px;
+    width: 20px;
+    padding-right:8px;
+    padding-left: 5px;
+}  
+
+.item{
+    text-align: 5px;
+    font-size: 15px;
+    text-decoration: solid;
+    color:rgb(30, 29, 29);
+    font-style: oblique;
+    padding-right:5px;
+    list-style: none;
+}
+
+
+input{
+    width: 100px;
+}
+
+.busqueda{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 70px;
+    height: 30px;
+    width: max-content;
+    border-color: rgb(171, 228, 245); 
+    background-color: rgb(176, 234, 250); 
+}
+
+.lupa{
+    height: 18px;
+    width: 20px;
+    padding-left:5px; 
+}
+
+
+.destinos{
+    background-color:rgba(197, 125, 242, 0.637);
+    display:flexbox;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-left:22px;
+}
+
+
+.nuevo{                                          
+    background-color:#7cf34cbe;
+    font-family:Georgia;
+    text-align: center;
+    display: inline-block;
+    border-radius: 14px;
+    width: 43%;
+    height: auto ;
+    margin-left: 19px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+.nuevo p{                                        
+    text-align: center;
+    font-style: italic;
+    text-decoration: solid;
+    background-color: beige;
+    color: rgb(91, 46, 0);
+    font-size: 11px;
+
+}
+
+.nuevo h1{                                        
+    text-align: center;
+    font-style:oblique;
+    block-size: 30px;
+    background-color: rgba(253, 253, 253, 0.769);
+    color:rgb(41, 60, 233);
+    font-size: 24px;
+
+}
+
+.nuevo h2{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    block-size: 22px;
+    font-size: 19px;
+}
+
+.nuevo img{                                    
+    width: 77%;
+    height: auto ; 
+    padding: 6px;
+}
+
+
+
+/* medios de pago */
+.fondo{
+    background-color:  rgba(193, 244, 242, 0.813);
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.medio img{
+
+    width: 70%;
+    height: 50%;
+    margin-top:22px ;
+    margin-left:16% ;
+}
+  
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+    .fonlis2{
+        margin-left: 10%;
+        margin-right:0%;
+    }
+    
+    .icon{
+        margin-top: 13px;
+        height: 23px;
+        width: 23px;
+        padding-right:8px;
+        padding-left:7px;
+    }  
+    
+    .item{
+        text-align: 15px;
+        font-size: 16px;
+        text-decoration: solid;
+        font-style: oblique;
+        padding: right 3px;
+        list-style: none;
+    }
+    
+    
+    input{
+        width: 150px;
+    }
+    
+    .busqueda{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        width: 70px;
+        height: 30px;
+        font-size: 17px;
+        width: max-content;
+        border-color: rgb(171, 228, 245); 
+        background-color: rgb(176, 234, 250); 
+    }
+    
+
+    .lupa{
+        height: 20px;
+        width: 22px;
+        padding-left:6px; 
+
+    }
+
+
+/* modificar los destinos */
+    .destinos{
+        background-color:rgba(197, 125, 242, 0.637);
+        display:flexbox;
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        margin-left:22px;
+    }
+    
+    
+    .nuevo{                                          
+        background-color:#7cf34cbe;
+        font-family:Georgia;
+        text-align: center;
+        display: inline-block;
+        border-radius: 14px;
+        width: 43%;
+        height: auto ;
+        margin-left: 19px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    
+    
+    .nuevo p{                                        
+        text-align: center;
+        font-style: italic;
+        text-decoration: solid;
+        background-color: beige;
+        color: rgb(91, 46, 0);
+        font-size: 11px;
+    
+    }
+    
+    .nuevo h1{                                        
+        text-align: center;
+        font-style:oblique;
+        block-size: 30px;
+        background-color: rgba(253, 253, 253, 0.769);
+        color:rgb(41, 60, 233);
+        font-size: 24px;
+    
+    }
+    
+    .nuevo h2{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        block-size: 22px;
+        font-size: 19px;
+    }
+    
+    .nuevo img{                                    
+        width: 77%;
+        height: auto ; 
+        padding: 6px;
+    }
+    
+
+
+   /* medios de pago */
+    
+    .medio img{
+    
+        width: 80%;
+        height: 60%;
+        margin-top:22px ;
+        margin-left:12% ;
+    }
+
+}
+
+
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    
+    
+    .icon{
+        margin-top: 17px;
+        height:40px;
+        width: 34px;
+    }  
+    
+    .item{
+        font-size: 24px;
+        padding: right 25px;
+    }
+    
+    
+    input{
+        width: 120px;
+        font-size: 16px;
+    }
+    
+    .busqueda{
+        margin-top: 25px;
+        margin-bottom: 20px;
+        width: 150px;
+        height: 40px;
+        font-size: 22px;
+        padding-left: 5px;
+    }
+    
+
+    .lupa{
+        height: 22px;
+        width: 26px; 
+       
+    }
+
+
+
+
+    /* medios de pago */
+    .fondo{
+        width: 90%;
+        height: 80%;
+        margin-left: 3%;
+      
+    }
+    
+    .medio img{
+    
+        width: 70%;
+        height: 70%;
+  
+    }
+
+}  
+
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    
+    .icon{
+        margin-top: 17px;
+        height:45px;
+        width: 36px;
+    }  
+    
+    .item{
+        font-size: 27px;
+    }
+    
+    
+    input{
+        width: 170px;
+        font-size: 22px;
+    }
+    
+    .busqueda{
+        font-size: 25px;
+        padding-left: 6px;
+        height: 50px;
+    }
+    
+
+    .lupa{
+        height: 24px;
+        width: 30px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+
+
+
+    /* medios de pago */
+    .fondo{
+        width: 90%;
+        height: 80%;
+        margin-left: 3%;
+      
+    }
+    
+    .medio img{
+    
+        width: 70%;
+        height: 70%;
+  
+    }
+}
+
+
+
+
+   
+
+
+
+
+
+
+/*
+.informacion{
+    margin-top: 30px;
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    width: 50%;
+    height: 50%;
+    border-radius: 13px;
+    margin-left: 10px;
+    margin-right: 13px;
+    display: flexbox;
+    background-color: #e6e4e4ca;
+}
+
+.carta{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:40%;
+    width: 18%;
+
+}
+
+.flechas{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 70%;
+    width: 19%;
+}
+
+.info h1{
+    margin-bottom:20px ;
+    text-align: center;
+    font-size: 20px;
+}
+
+.info span{
+    margin-left: 16px;
+    display: block;
+    text-align: start;
+    font-size: 17px;
+    
+}
+
+.chekin{
+  border-radius: 1%;
+  border-color: #f0bb0d;
+  display: flex;
+}
+
+.infochekin{
+    background-color: #96e561;
+    width: 50%;
+    height: 300px;
+    margin-top: 45px;
+    margin-left: 15px;
+    width: max-content;
+}
+
+.infochekin h1{
+    color: #030ff6;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.infochekin img{
+    width: 40%;
+    height: 30%;
+    margin-left:70px ;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.parafos{
+   font-size: 12px;
+   color: rgb(59, 59, 58);
+   font-family: 'Courier New', Courier, monospace;
+   margin-left: 5px;
+   margin-right: 3px;
+  
+    
+}
+
+.conteychekin{
+    background-color: #868cf5;
+    margin-top: 45px;
+    margin-right: 12px;
+    width: 30%;
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.conteychekin h2{
+    color: #030ff6;
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: center; 
+
+}
+
+.imagchekin{
+    width: 15%;
+    height: 35%;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.tex{
+    float: right;
+    margin-right: 35px;
+}
+
+ */

@@ -1,0 +1,257 @@
+
+*{
+    margin: 0%;
+}
+
+
+.header {
+    background-color: #0769e9;
+    display: flexbox; 
+    height: 50px;
+    width: 100%;
+}
+  
+.nav {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 0 5px;
+}
+   
+.nav-link {
+   text-decoration: none;
+   color: aliceblue;
+  
+}   
+  
+.logo {
+    font-size:25px;
+    font-weight: bold;
+    padding-left: 3px;
+}
+  
+.logoavion{
+
+    margin-top: 10px;
+    height: 33px;
+    width: 33px;
+   
+}
+
+
+.nav-menu {
+    display: flex; 
+    padding: 2px;
+    list-style: none;
+}
+  
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 3px;
+    line-height: 50px;
+    width: max-content;     /*se utiliza para establecer el ancho máximo de un elemento*/ 
+}
+  
+.nav-menu-link {
+    padding: 8px;
+    border-radius: 3px;
+}
+  
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background: none;
+    color: #000b47;
+    transition: 0.5s;
+}
+  
+/* TOGGLE  boton del navegador */
+.nav-toggle {
+
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 25px;
+    line-height: 50px;
+    cursor: pointer;
+    
+    display: none;  
+}
+
+.icono-celular {
+    height: 60px;
+    width: 60px;
+}
+  
+@media (min-width:200px) and (max-width:500px){  
+  
+    .header {
+        height: 60px;   /*tamaño del nevegador*/
+          
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #4f8f9c;
+        position: fixed;
+        top: 55px;
+        width:100%;
+        padding: 20px 0;
+      
+        height: calc(30% - 60px); 
+        overflow-y: auto;
+      
+        left: 100%; 
+        transition: left 0.3s;
+    }
+      
+    .nav-menu-item {
+        line-height: 40px;
+    }
+      
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #014a2f;
+    }
+      
+    .nav-toggle {
+        display: block;
+    }
+      
+    .nav-menu_visible {  /*desplegable */
+        left: 0;
+    }
+      
+    .nav-toggle:focus:not(:focus-visible) { 
+        outline: none;
+    } 
+}
+    
+
+
+/*mobay (500) nav hecho*/
+
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .logo {
+        font-size: 21px;
+        padding-left: 5px;
+    }
+  
+    .logoavion{
+
+        margin-top: 3px;
+        height: 30px;
+        width: 30px;
+       
+    }
+
+
+    .nav-menu-item {
+        font-size: 16px;
+        margin: 0 3px;
+    }
+
+    .nav-menu-link {
+        padding: 2px;
+    }
+}
+
+@media (min-width: 801px) and (max-width:1000px){      
+      
+.logo {
+    font-size: 27px;
+    padding-left: 20px;
+    line-height: 50px;
+
+}
+
+.logoavion{
+
+    margin-top: 3px;
+    height: 35px;
+    width: 35px;
+   
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.nav-menu-link {
+    padding: 15px;
+}
+
+}
+
+@media (min-width: 1001px) and (max-width:1200px){  /* escritorio hecho*/
+
+
+    .logo {
+        font-size: 32px;
+        padding-left: 25px;
+    }
+
+    .logoavion{
+        margin-top: 3px;
+        height: 40px;
+        width: 40px;
+       
+    } 
+    
+    .nav-menu-item {
+        font-size: 22px;
+        margin: 0 16px;
+    }
+     
+    
+    .nav-menu-link {
+        padding: 12px;
+    }
+    
+    .header {
+        height: 57px;
+        width: 100%;
+    }
+    
+    
+    /* escritorio nav hecho*/
+}
+
+@media (min-width: 1201px) and (max-width:1400px){   /* escrirorio monitor grande listo*/
+
+   
+    .logo {
+        font-size: 34px;
+        padding-left: 30px;
+    }
+
+    .logoavion{
+        margin-top: 0px;
+        height: 45px;
+        width: 45px;
+       
+    } 
+    
+    .nav-menu-item {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+
+   
+    .nav-menu-link {
+        padding: 15px;
+    }
+    
+    .header {
+        height: 65px;
+        width: 100%;
+    
+    }
+
+
+    /* escritorio nav hecho*/
+
+}
