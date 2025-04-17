@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,15 +6,12 @@
     <title>Eliminar Producto</title>
 </head>
 <body>
-    <%- include('../partials/header') %>
     <h1>Eliminar Producto</h1>
-    <p>¿Estas seguro de que deseas eliminar el producto <%= producto.marca %> <%= producto.modelo %>?</p>
+    <p>¿Estas seguro de que deseas eliminar el destino <%= producto.lugar %> <%= producto.descripcion %>?</p>
     <form  action="/<%=producto.id%>?_method=DELETE" method="POST">
         <button type="submit">Eliminar</button>
     </form> 
 
     <a href="/">Cancelar</a>
-
-    <%- include('../partials/footer') %>
 </body>
-</html> -->
+</html>

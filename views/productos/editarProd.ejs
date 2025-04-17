@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,38 +6,46 @@
     <title>Editar Producto</title>
 </head>
 <body>
-    <%- include('../partials/header') %>
-    <h1>Editar Producto</h1>
-    <form action="/<%=producto.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
-         <!-- <input type="hidden" name="_method" value="PUT"> -
-        <div>
-            <label for="marca">Marca: </label>
-            <input type="text" name="marca" id="marca" value="<%=producto.marca%>" required>
-        </div>
-        <br>
+  <h1>Editar Producto</h1>
+  <form action="/<%=producto.id%>?_method=PUT" method="post" enctype="multipart/form-data">
+    <!-- <input type="hidden" name="_method" value="PUT"> -->
+     
+    <div>
+      <label for="lugar">Lugar: </label>
+      <input type="text" name="lugar" id="lugar" value="<%=producto.lugar%>" required>
+    </div>
 
-        <div>
-            <label for="modelo">Modelo: </label>
-            <input type="text" name="modelo" id="modelo" value="<%=producto.modelo%>" required>
-        </div>
-        <br>
+    <br />
+   
+    <div>
+      <label for="imagen">Imagen: </label>
+      <input type="file" name="imagen" id="imagen" placeholder="Carga la imagen">
+    </div>
 
-        <div>
-            <label for="precio">Precio: </label>
-            <input type="number" name="precio" id="precio" value="<%=producto.precio%>" required>
-        </div>
-        <br>
+    <br>
 
-        <div>
-            <label for="imagen">Imagen: </label>
-            <input type="file" name="imagen" id="imagen" placeholder="Carga la imagen">
-        </div>
-        <br>
+    <div>
+      <label for="descripcion">descripcion: </label>
+      <input type="text" name="descripcion" id="descripcion" value="<%=producto.descripcion%>" required>
+    </div>
 
-        <div>
-            <button type="submit">Actualizar Vehículo</button>
-        </div>
-    </form>
-    <%- include('../partials/footer') %>
+    <br>
+
+    <div>
+      <label for="precio">Precio: </label>
+      <input type="number" name="precio" id="precio" value="<%=producto.precio%>" required>
+    </div>
+
+   <br>
+
+   <div>
+      <label for="millasacumulables">Millas acumulables: </label>
+     <input type="number" name="millasacumulables" id="millasacumulables" value="<%=producto.millasacumulables%>" required>
+   </div>
+
+   <div>
+     <button type="submit">Actualizar destino </button>
+   </div>
+  </form>  
 </body>
-</html> -->
+</html>

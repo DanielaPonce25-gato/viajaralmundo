@@ -6,29 +6,37 @@
     <title>Destinos</title>
     <link rel="stylesheet" href="/css/destinos.css">
 </head>
-<body>
+<body class="destinos">
+  
     <main>
+           <br>
         <h1>Conoce el mundo con nosotros</h1>
 
+        <img class="conexion" src="/imagenes/conexion.avif">
+
         <ul class="producto-lista">
-            <% productos.forEach(producto => { %>
-               <li>                                  <!-- estoy consumiendo los productos guardados en productos.json -->
-                   <div><%= producto.lugar %></div>
-                   <div><%= producto.imagen %></div>
-                   <div><%= producto.descripcion %></div>
-                   <div><%= producto.precio %></div>
-                   <div><%= producto.millasacumulables %></div>
+            <% productos.forEach(producto => { %>  <!-- productos es el json parsiado y viene del controlador -->  <!-- forEach itera sobre cada producto  -->
+
+               <li> <!-- estoy consumiendo los productos guardados en productos.json -->  
+                  <img src="./imagenes/<%=producto.imagen%>"/>
+                    <h2><%= producto.lugar %></h2>
+                    <div class="item"><h3>Descripcion:</h3> <p><%= producto.descripcion %></p></div>
+                    <div class="item"><h3>Precio:</h3> <p>$<%= producto.precio %></p> </div>
+                    <div class="item"><h3>Millas a Cumular:</h3> <p><%= producto.millasacumulables %></p></div>
             
-                  <!-- <div class="form-container">
-                     <a href="/<%=producto.id%>/edit">Editar</a>
-                     <a href="/<%=producto.id%>/delete">Eliminar</a>
-                  </div> -->
+                  <div class="form-container">
+                     <a class="edit" href="/<%=producto.id%>/edit">Editar</a>
+                     <a class="eliminar" href="/<%=producto.id%>/delete">Eliminar</a>
+                  </div>
             
-                
                 </li>
            <% }) %>
-        </ul>
-    </main>
 
+           <button><a class="crear" href="/create">Crear Producto</a></button>
+           
+        </ul> 
+
+    </main>
+     
 </body>
 </html>

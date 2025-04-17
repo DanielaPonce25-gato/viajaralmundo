@@ -1,4 +1,4 @@
-<!--  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,41 +6,50 @@
     <title>Create</title>
 </head>
 <body>
-    <%- include('../partials/header') %>
-
     <form action="/create" method="POST" enctype="multipart/form-data">
         <div>
-            <label for="marca">Marca: </label>
-            <input type="text" name="marca" id="marca" placeholder="Ingresa la Marca" required>
+            <label for="lugar">Lugar: </label>
+            <input type="text" name="lugar" id="lugar" placeholder="Ingresa el lugar" required>
         </div>
+
+        <br>
+       
+        <div>
+            <label for="imagen">Imagen: </label>
+            <input type="file" name="imagen" id="imagen" required>
+        </div>
+     
         <br>
 
         <div>
-            <label for="modelo">Modelo: </label>
-            <input type="text" name="modelo" id="modelo" placeholder="Ingresa el Modelo" required>
+            <label for="descripcion">descripcion: </label>
+            <input type="text" name="descripcion" id="descripcion" placeholder="Decribilo" required>
         </div>
+
         <br>
 
         <div>
             <label for="precio">Precio: </label>
             <input type="number" name="precio" id="precio" placeholder="Ingresa el Precio" required>
         </div>
+
         <br>
 
         <div>
-            <label for="imagen">Imagen: </label>
-            <input type="file" name="imagen" id="imagen" required>
+            <label for="millasacumulables">Millas acumulables: </label>
+            <input type="number" name="millasacumulables" id="millasacumulables" placeholder="Ingresa millas a ganar" required>
         </div>
+
         <br>
 
         <div>
-            <button type="submit">Crear Vehículo</button>
+            <button type="submit" value="guardar producto">Crear Destino</button>
         </div>
+
     </form>
     <div>
-        <a href="/">Volver a Home</a>
+        <a href="/">Volver a Home de destinos</a>
     </div>
  
-    <%- include('../partials/footer') %>
 </body>
-</html> -->
+</html> 

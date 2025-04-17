@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-in</title>
+    <link rel="stylesheet" href="/public/css/check-in.css">
+</head>
+<body>
+ 
+  <iframe id="narvar" src="/views/Navhome.html"frameborder="0"></iframe>  
+
+    <br><br><br><br>
+
+   <main>
+     <section class="infcheck">
+        <h1>Realiza el Formulario Check-in</h1>
+
+        <p>No es necesaro presenta captura de pantalla o imprimirlo. 
+            Los datos se quedaran guardados en el sistema.
+        </p>
+     </section>
+
+     <form id="check-in-from">
+        <label for="name">Nombre y Apellido:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="correo">Correo:</label>
+        <input type="text" id="correo" name="correo"><br><br>
+        <label for="pairecidencia">Pais de Recidencia</label>
+        <input type="text" id="pairecidencia" name="pairecidencia"><br><br>
+        <label for="destino">Destino</label>
+        <input type="text" id="destino" name="destino"><br><br>
+        <label for="diacanti">Cuantos dias se queda</label>
+        <input type="number" id="diacanti" name="diacanti"><br><br>
+        <label for="nochecanti">Cuantos noches se queda</label>
+        <input type="number" id="nochecanti" name="nochecanti"><br><br>
+        <label for="fhachasal">Fecha de salida</label>
+        <input type="datetime" id="fhachasal"name="fhachasal"><br><br>
+        <label for="fhacharegre">Fecha de regreso</label>
+        <input type="datetime" id="fhacharegre"name="fhacharegre"><br><br>
+        <button type="submit" id="check-in-button">Enviar</button>  
+     </form> 
+
+      <section class="importante">
+        <p>Una vez enviado los datos, no hay necesidad rellenarlo nuevamente.</p>
+        <p>Si son más de un usuario y comparten el vuelo, entonces sí tienen que realizarlo uno por uno. </p>
+      </section>
+    
+  </main>
+
+  <iframe id="pie" src="/views/piedepagina.html"frameborder="0"></iframe>  
+    
+</body>
+</html>

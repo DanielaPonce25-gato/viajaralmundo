@@ -9,27 +9,28 @@ const productos = JSON.parse(fs.readFileSync(productosFilePath, 'utf-8'));
 
  
 const productosController = {
-    list: (req, res) => {     /* reg requiere la informacion */  /* res devuelve la respuesta */
+    list: (req, res) => {     /* req requiere la informacion */  /* res devuelve la respuesta */
         res.render('destinos', {productos});
     },
-
-    /*  
+    
     create: (req, res) => {
         res.render('productos/creacionProd');
     },
 
     stock: (req, res) => {
-        const marca = req.body.marca;
-        const modelo = req.body.modelo;
-        const precio = req.body.precio;
+        const lugar = req.body.lugar;
         const imagen = req.file ? req.file.filename : null;
+        const descripcion = req.body.descripcion;
+        const precio = req.body.precio;
+        const millasacumulables = req.body.millasacumulables;
 
         const nuevoProducto = {
             id: productos.length + 1,
-            marca,
-            modelo,
+            lugar,
+            imagen,
+            descripcion,
             precio,
-            imagen
+            millasacumulables
         };
 
         try {
@@ -43,6 +44,7 @@ const productosController = {
         }
     },
 
+
     edit: (req, res) => {
         const id = req.params.id;
         const producto = productos.find(producto => producto.id == id);
@@ -51,14 +53,16 @@ const productosController = {
 
     update: (req, res) => {
         const id = req.params.id;
-        const marca = req.body.marca;
-        const modelo = req.body.modelo;
-        const precio = req.body.precio;
+        const lugar = req.body.lugar;
         const imagen = req.file ? req.file.filename : null;
+        const descripcion = req.body.descripcion;
+        const precio = req.body.precio;
+        const millasacumulables = req.body.millasacumulables;
+        
 
         const productoUpdate = productos.findIndex(producto => producto.id == id);
         if (productoUpdate !== -1) {
-            productos[productoUpdate] = { id: Number(id), marca, modelo, precio, imagen };
+            productos[productoUpdate] = { id: Number(id), lugar, imagen, descripcion, precio, millasacumulables };
             try {
                 fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "));
                 res.redirect('/');
@@ -69,9 +73,10 @@ const productosController = {
             }
         } else {
             res.status(404).send("Producto no encontrado");
-        }
+        } 
     },
 
+   
     delete: (req, res) => {
         const id = req.params.id;
         const producto = productos.find(producto => producto.id == id);
@@ -98,7 +103,8 @@ const productosController = {
         } else {
             res.status(404).send("Producto no encontrado");
         }
-    }*/
+    } 
+
 };
 
 
