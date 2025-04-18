@@ -3,11 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/tablavuelo.css">
     <title>Tablaro de Vuelo</title>
 </head>
 <body>
 
-    
-    
+    <main>
+
+        <iframe id="narvar" src="/views/Navhome.html"frameborder="0"></iframe>
+
+        <div class="container">
+
+            <div class="tabla">
+
+                <table>
+                <td class="encabezado">Horario</td>
+                <td class="encabezado">Aerolinea</td>
+                <td class="encabezado">Destino</td>
+                <td class="encabezado">Vuelo</td>
+                <td class="encabezado">Puerta</td>
+                <td class="encabezado">Observaciones</td>
+                <tr>
+                    <td class="celda">3:00</td>
+                    <td><img src="/public/imagenes/avion/arajet.jpg" alt="" srcset=""></td>
+                    <td class="celda">Dubai</td>
+                    <td class="celda">JMT45</td>
+                    <td class="celda">A1</td>
+                    <td class="celda">Estimada a las 2:45</td>
+                </tr>
+                <tr>
+                    <td class="celda">5:00</td>
+                    <td><img src="/public/imagenes/avion/copa.jpeg" alt="" srcset=""></td>
+                    <td class="celda">España</td>
+                    <td class="celda">LSD55</td>
+                    <td class="celda">A3</td>
+                    <td class="celda">Estimada a las 3:15</td>
+                </tr>
+                <tr>
+                    <td class="celda">16:00</td>
+                    <td><img src="/public/imagenes/avion/despegar.jpeg" alt="" srcset=""></td>
+                    <td class="celda">grecia</td>
+                    <td class="celda">LQI23</td>
+                    <td class="celda">A5</td>
+                    <td class="celda">Estimada a las 15:50</td>
+                </tr>
+                <tr>
+                    <td class="celda">18:00</td>
+                    <td><img src="/public/imagenes/avion/gol.png" alt="" srcset=""></td>
+                    <td class="celda">Barbados</td>
+                    <td class="celda">45HMQ</td>
+                    <td class="celda">E4</td>
+                    <td class="celda">CERRADA</td>
+                </tr>
+                <tr>
+                    <td class="celda">80:00</td>
+                    <td><img src="/public/imagenes/avion/Aerolineas-Argentinas.jpg" alt="" srcset=""></td>
+                    <td class="celda">italia</td>
+                    <td class="celda">KLM26</td>
+                    <td class="celda">A6</td>
+                    <td class="celda">CERRADA</td>
+                </tr>
+                <tr>
+                    <td class="celda">5:00</td>
+                    <td><img src="/public/imagenes/avion/arajet.jpg" alt="" srcset=""></td>
+                    <td class="celda">Jamaica</td>
+                    <td class="celda">XMLL3</td>
+                    <td class="celda">B3</td>
+                    <td class="celda">Retrasado</td>
+                </tr>
+                <tr>
+                    <td class="celda">6:00</td>
+                    <td><img src="/public/imagenes/avion/despegar.jpeg" alt="" srcset=""></td>
+                    <td class="celda">Egipto</td>
+                    <td class="celda">EGY34</td>
+                    <td class="celda">A3</td>
+                    <td class="celda">Retrasado</td>
+                </tr>
+                <tr>
+                    <td class="celda">15:00</td>
+                    <td><img src="/public/imagenes/avion/gol.png" alt="" srcset=""></td>
+                    <td class="celda">Paises Bajos</td>
+                    <td class="celda">DLP56</td>
+                    <td class="celda">A6</td>
+                    <td class="celda">Estimada a las 14:30</td>
+                </tr>
+                </table>
+            </div>
+
+
+            <div class="item"> 
+                <div>
+                    <iframe src="https://www.airnavradar.com/?widget=1&z=2&lat=-10.91135&lng=123.70437" frameborder="0"></iframe>
+                </div> 
+                
+            </div> 
+
+            <div class="aside">
+
+                <div>
+                    <video  autoplay loop>
+                        <source src="/public/imagenes/avion/mundo.mp4" type="video/mp4">
+                    </video>
+                    <p><b><i>"No hay camino que me detenga, voy por el mundo como quiero."<b></b></i></p>
+                </div>
+
+                <div>
+                    <img src="/public/imagenes/avion/luz-avion.jpg">
+                    <p><b><i>"Viajar es la mejor manera de aprender y crecer."<b></b></i></p>
+                
+
+                <div>
+                    <img src="/public/imagenes/avion/avion.jpg">
+                    <p><b><i>"Comenzá a acumular millas y soña con tu próximo destino"<b></b></i></p>
+                </div>
+            
+            </div> 
+
+
+
+        </div>    
+        <iframe id="pie" src="/views/piedepagina.html"frameborder="0"></iframe>  
+
+    </main>
 </body>
 </html>

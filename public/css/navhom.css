@@ -24,7 +24,7 @@
 }   
   
 .logo {
-    font-size:25px;
+    font-size:20px;
     font-weight: bold;
     padding-left: 3px;
 }
@@ -45,7 +45,7 @@
 }
   
 .nav-menu-item {
-    font-size: 18px;
+    font-size: 14px;
     margin: 0 3px;
     line-height: 50px;
     width: max-content;     /*se utiliza para establecer el ancho máximo de un elemento*/ 
@@ -85,12 +85,19 @@ summary{
     color: azure;
 }
 
-.itemnarvar{
+.fondo{
+    background-color: #c7eff7;
 
-    font-size: 15px;
+}
+
+.fondo a{
+  padding-top: 3px;
+}
+
+.itemnarvar{
+    font-size: 13px;
     color: blue;
     text-decoration: none;
-    font-style: oblique;
     font-weight: bold;
     
 
@@ -166,12 +173,31 @@ summary{
 
 
     .nav-menu-item {
-        font-size: 16px;
+        font-size: 15px;
         margin: 0 3px;
     }
 
     .nav-menu-link {
         padding: 2px;
+    }
+
+    summary{
+        color: azure;
+    }
+    
+    .fondodesplegable{
+        width: 60px;
+    }
+    
+    .itemnarvar{
+    
+        font-size: 15px;
+        color: blue;
+        text-decoration: none;
+        font-style: oblique;
+        font-weight: bold;
+        
+    
     }
 }
 

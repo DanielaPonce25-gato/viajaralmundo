@@ -1,0 +1,279 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+iframe{
+    display: flex;
+    position: absolute;
+}
+
+#pie{
+    width:100%;
+    padding-top: 100%;
+}
+
+#narvar{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas:     
+        "tabla tabla  aside " 
+        "item   item    aside";
+
+    grid-template-columns:repeat(2,40%) 21%; 
+    grid-template-rows:repeat(2,1fr);
+
+    
+    padding-top: 70px;
+
+}
+
+
+.tabla {
+    grid-area: tabla;
+}
+
+.encabezado{
+    font-size:12px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 8, 81);
+    background-color: #bcf3a6;
+    padding-left: 4px;
+    padding-right: 3px;
+}
+
+.celda {
+    font-size: 9px;
+    color: black;
+    font-weight: bold;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgba(192, 239, 239, 0.821);
+
+}
+
+.tabla img{
+    width: 60px;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+.item{
+    grid-area: item; 
+    display: flex;
+    justify-content: start;
+    
+}
+
+
+.item iframe{
+    width:  80%;
+    height: 40%;
+}
+
+
+
+.aside{
+    grid-area: aside;
+    justify-content: start;
+    background-color: rgba(243, 240, 240, 0.811);
+}
+
+
+.aside img{
+    width: 95%;
+    height: max-content;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.aside video{
+    width: 95%;
+    height: max-content;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+.aside p{
+
+    font-size: 9px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+    .container {
+    
+        grid-template-columns:repeat(2,1fr) 20%; 
+        justify-self: start;
+    
+    }
+    
+    .encabezado{
+        font-size:13px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    
+    .celda {
+        font-size: 10px;
+        padding-left: 4px;
+        padding-right: 4px;
+    
+    }
+    
+    .tabla img{
+        width: 70px;
+        height: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    
+    }
+    
+    .item iframe{
+        width:  80%;
+        height: 45%;
+    }
+    
+    .aside img{
+        width: 90%;
+        padding-top: 20px;
+    }
+    
+    .aside video{
+        width: 90%;
+        height: max-content;
+        padding-top: 20px;
+    }
+    
+    
+    .aside p{
+    
+        font-size: 10px;
+        text-align: center;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+
+
+@media (min-width: 801px) and (max-width: 1200px) {
+
+    .container {
+    
+        grid-template-columns:repeat(2,1fr) 25%; 
+    
+    }
+    
+    .encabezado{
+        font-size:20px;
+        padding-left: 1px;
+        padding-right: 2px;
+    }
+    
+    .celda {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    
+    .tabla img{
+        width: 80px;
+        height: 30px;
+    
+    }
+    
+    .item iframe{
+        width:  75%;
+        height: 60%;
+    }
+    
+    .aside img{
+        width: 95%;
+        padding-top: 10px;
+    }
+    
+    .aside video{
+        width: 95%;
+        padding-top: 30px;
+    }
+    
+    
+    .aside p{
+    
+        font-size: 17px;
+        text-align: center;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    
+
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+
+    .container {
+    
+        grid-template-columns:repeat(2,1fr) 30%; 
+    
+    }
+    
+    .encabezado{
+        font-size:30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .celda {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    
+    .tabla img{
+        width: 80px;
+        height: 30px;
+    
+    }
+    
+    .item iframe{
+        width:  75%;
+        height: 60%;
+    }
+    
+    .aside img{
+        width: 95%;
+        padding-top: 10px;
+    }
+    
+    .aside video{
+        width: 95%;
+        padding-top: 30px;
+    }
+    
+    
+    .aside p{
+    
+        font-size: 17px;
+        text-align: center;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    
+
+
+}
