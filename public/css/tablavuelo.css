@@ -20,6 +20,14 @@ iframe{
     
 }
 
+#carruzel{
+
+    margin-top: 5%;
+    width: 90%;
+    height: 70%;
+    margin-left: 3%;
+
+}
 
 .container {
     display: grid;
@@ -52,10 +60,9 @@ iframe{
 
 .celda {
     font-size: 9px;
+    text-align: center;
     color: black;
     font-weight: bold;
-    padding-left: 2px;
-    padding-right: 2px;
     background-color: rgba(192, 239, 239, 0.821);
 
 }
@@ -116,6 +123,68 @@ iframe{
 }
 
 
+
+
+@media (min-width:330px) and (max-width:499px){  
+
+    .encabezado{
+        font-size:8px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .celda {
+        font-size: 7px;
+    }
+    
+    .tabla img{
+        width: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    
+    }
+
+    .tabla {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aside img{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .aside video{
+        width: 100%;
+        padding-top: 13px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    
+    .aside p{
+    
+        font-size: 7px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    
+
+    .item iframe{
+        width:  80%;
+        height: 30%;
+    }
+
+    #carruzel{
+        margin-top: 5%;
+        width: 100%;
+    
+    }
+
+}
+
+
 @media (min-width: 501px) and (max-width: 800px) {
 
     .container {
@@ -170,6 +239,14 @@ iframe{
         padding-left: 3px;
         padding-right: 3px;
     }
+
+    #carruzel{
+        margin-top: 10%;
+        width: 95%;
+        height: 90%;
+    
+    }
+
 }
 
 
@@ -223,6 +300,14 @@ iframe{
     }
     
 
+    #carruzel{
+        margin-top: 15%;
+        width: 93%;
+        height: 100%;
+    
+    }
+
+
 }
 
 @media (min-width: 1201px) and (max-width: 1400px) {  
@@ -246,7 +331,7 @@ iframe{
     
     .item iframe{
         width:  80%;
-        height: 80%;
+        height: 150%;
     }
 
 
@@ -256,6 +341,9 @@ iframe{
         margin-right: 5px;
     }
     
+    #carruzel{
+        margin-top: 0%;
+    }
 
 
 } 

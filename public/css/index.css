@@ -149,11 +149,11 @@ input{
 }
 
 .informacion{
-    margin-top: 3%;
+    margin-top: 7%;
     display: flex;
     justify-content: space-between;
-    margin-right: 10px;
-    margin-left: 30px;
+    margin-right: 19px;
+    margin-left: 19px;
     
 }
 
@@ -161,13 +161,14 @@ input{
 
     background-color: rgba(217, 217, 231, 0.569);
     height:150px ;
-    width: 210px ;
+    width: 235px ;
     box-sizing: border-box;
     border-radius: 4%;
     border-style: solid;
     border-width:2px;
     border-color: darkseagreen;
-    padding-left: 6px;
+    padding-left: 2px;
+    padding-right: 0px;
     padding-bottom: 6px;
     
 
@@ -176,11 +177,12 @@ input{
 .tituloinfo{
    display: flex;
    justify-content: space-between;
-   margin-left: 10px;
+   width: max-content;
+   margin-left: 1px;
 }
 
 .tituloinfo img{
-    width: 45px;
+    width: 42px;
 }
 
 .informacion h1{
@@ -188,14 +190,14 @@ input{
     font-family: cursive;
     text-decoration: underline;
     font-weight: 500;
-    margin-right: 20px;
+    margin-right: 3px;
     margin-top: 10px;
     padding-bottom: 5px;
 }
 
 .plantillainfo span{
     font-size: 13px;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
 }
 
 .plantillainfo a{
@@ -212,14 +214,14 @@ input{
 .chekin{
     width: 100%;
     height: auto;
-    padding-left: 20px;
+    padding-left: 10px;
     display: flex;
 
 }
 
 .infochekin{
-   width: 200px;
-   height: 300px;
+    width: 200px;
+    height: 300px;
 
 }
 
@@ -279,6 +281,169 @@ input{
 
 
 
+@media (min-width:330px) and (max-width:499px){  
+
+    
+    .destinos{
+        margin-left:12px;
+    }
+    
+    
+    .nuevo{                                          
+        width: 40%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    
+    .nuevo p{                                        
+        color: rgb(91, 46, 0);
+        font-size: 8px;
+        padding-top: 6px;
+        padding-bottom: 7px;
+    
+    }
+    
+    .nuevo h1{                                        
+        block-size: 20px;
+        font-size: 16px;
+    
+    }
+    
+    .nuevo h2{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        block-size: 22px;
+        font-size: 17px;
+    }
+    
+    .nuevo img{                                    
+        width: 90%;
+        height: auto ; 
+        padding: 6px;
+    }
+    
+    /* medios de pago */
+    .fondo{
+        margin-left: 4%;
+    }
+    
+    .informacion{
+        margin-top: 7%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2px;
+        margin-left: 0px;
+        
+    }
+    
+    .plantillainfo{
+        height:140px ;
+        width: 174px ;
+        padding-left: 3px;
+        padding-right: 5px;
+        padding-bottom: 6px;
+        
+    
+    }
+    
+    .tituloinfo{
+        margin-left: 0px;
+    }
+    
+    .tituloinfo img{
+        width: 33px;
+        padding-left: 1px;
+    }
+    
+    .informacion h1{
+        font-size: 11px;
+        font-family: cursive;
+        text-decoration: underline;
+        font-weight: 500;
+        margin-right: 3px;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+    
+    .plantillainfo span{
+        font-size: 11px;
+        padding-bottom: 3px;
+    }
+    
+    .plantillainfo a{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .flechas{
+        width:40px ;
+        height: 30px;
+        margin-left: 70%;
+    }
+    
+    .chekin{
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        display: flex;
+    
+    }
+    
+    .infochekin{
+        width: 180px;
+        height: 300px;
+    
+    }
+    
+    .infochekin img{
+        width:120px;
+        height:130px;
+        padding-left: 15px;
+    }
+    
+    .infochekin h1{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .infochekin p{
+        padding-top: 10px;
+        font-size: 11px;
+        text-align: center;
+        padding-right: 0px;
+        margin-left: 6px;
+    }
+    
+    .conteychekin{
+        width: 200px;
+        height: 300px;
+    
+    }
+    
+    .segtitulocheck{
+        padding-left: 5px;
+    }
+    
+    .segtitulocheck h2{
+        padding-right: 20px;
+        font-size: 13px;
+    }
+    
+    .parafos{
+        padding-top: 5px;
+        font-size:10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 3px;
+    }
+
+
+    /* falta esta mancueri de las demas */
+}
+
+/* https://getbootstrap.com/docs/5.0/layout/breakpoints/     interrupción disponibles */
+
 @media (min-width: 501px) and (max-width: 800px) {
 
     .fonlis2{
@@ -328,7 +493,6 @@ input{
     }
 
 
-  
     .destinos{
         margin-top: 30px;
         margin-left:40px;
@@ -371,15 +535,15 @@ input{
     
 
     .chekin{
-        padding:8%;
+        padding:3%;
         padding-bottom: 30px;
         padding-top: 30px;
         width: max-content;
     }
     
     .infochekin{
-       width: 210px;
-       height: 300px;
+        width: 210px;
+        height: 300px;
     }
     
     .infochekin img{
@@ -389,8 +553,9 @@ input{
     }
     
     .infochekin h1{
-       font-size: 21px;
+        font-size: 21px;
     }
+    
     
     .infochekin p{
         padding-top: 10px;
@@ -408,6 +573,7 @@ input{
         padding-left: 10px;
     }
     
+
     .segtitulocheck img{
         width: 15%;
         height: 10%;
@@ -416,12 +582,14 @@ input{
         padding-right: 5px;
     }
     
+
     .segtitulocheck h2{
         padding-top: 7px;
         padding-right:25px;
         font-size: 16px;
     }
     
+
     .parafos{
         padding-top: 3px;
         font-size:13px;
@@ -431,27 +599,29 @@ input{
 
     .informacion{
         margin-top: 5%;
-        margin-right:30px;
-        margin-left: 60px;
+        margin-right:10px;
+        margin-left: 10px;
     }
     
     .plantillainfo{
-        height:190px ;
-        width: 210px;
-        padding-left: 5px; 
+        height:170px ;
+        width: 245px;
+        padding-left: 5px;
+        margin-right: 10px; 
     }
     
     .tituloinfo{
-       margin-left: 13px;
+        margin-left: 0px;
+        padding-right: 5px;
     }
     
     .tituloinfo img{
-        padding-top:10px;
-        width: 46px;
+        padding-top:2px;
+        width: 43px;
     }
     
     .informacion h1{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 700;
         margin-right: 5px;
         margin-top: 13px;
@@ -479,7 +649,7 @@ input{
        margin-left:12% ;
     }
 
-  
+
 }
 
 
@@ -642,7 +812,7 @@ input{
     
     .plantillainfo{
         height:200px ;
-        width: 300px;
+        width: 340px;
         padding-left: 10px; 
     
     }
@@ -769,13 +939,13 @@ input{
     .chekin{
         width: 60%;
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
         padding-left:20%;
     }
     
     .infochekin{
-       width: 320px;
-       height: 430px;
+       width: 400px;
+       height: 600px;
     }
     
     .infochekin img{
@@ -785,17 +955,19 @@ input{
     }
     
     .infochekin h1{
-       font-size: 30px;
+        font-size: 38px;
     }
     
     .infochekin p{
-        font-size: 20px;
+        font-size: 25px;
+        padding-top: 14px;
+        margin-left: 2px;
 
     }
     
     .conteychekin{
-        width: 370px;
-        height: 430px;     
+        width: 400px;
+        height: 600px;     
     }
     
     .segtitulocheck{
@@ -803,7 +975,7 @@ input{
     }
     
     .segtitulocheck img{
-        width: 17%;
+        width: 18%;
         height: 10%;
         padding-bottom: 3px;
         padding-top: 5;
@@ -812,12 +984,12 @@ input{
     .segtitulocheck h2{
         padding-top: 20px;
         padding-right:30px;
-        font-size: 23px;
+        font-size: 28px;
     }
     
     .parafos{
-        padding-top: 4px;
-        font-size:17px;
+        padding-top: 20px;
+        font-size:22px;
         padding-left: 5px;
         padding-right: 5px;
         padding-bottom: 3px;
@@ -831,14 +1003,16 @@ input{
     }
     
     .plantillainfo{
-        height:225px ;
-        width: 400px;
-        padding-left: 20px; 
-    
+        height: 225px;
+        width: 470px;
+        margin-top: 4px;
+        margin-bottom: 60px;
+        padding-left: 10px;
+        margin-left: 30px;
     }
     
     .tituloinfo{
-       margin-left: 15px;
+       margin-left: 25px;
     }
     
     .tituloinfo img{
@@ -851,7 +1025,7 @@ input{
         font-weight: 700;
         margin-right: 35px;
         margin-top: 40px;
-        padding-bottom:12px;
+        padding-bottom:15px;
     }
     
     .plantillainfo span{
@@ -859,7 +1033,7 @@ input{
     }
     
     .flechas{
-        width:48px ;
+        width:80px ;
         height: 40px;
         margin-left: 70%;
     }

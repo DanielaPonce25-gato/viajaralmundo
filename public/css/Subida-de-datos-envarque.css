@@ -54,8 +54,6 @@ h1{
 
 
 #boton{
-    width: 100px ;
-    height: 30px;
     margin-left: 30%;
     width: 30%;
     height: 40px;
@@ -64,6 +62,98 @@ h1{
     border-width:2px;
     border-color: rgb(13, 1, 243);
     font-size: 18px;
+}
+
+#informe{
+    margin: 15px;
+    background-color: rgb(249, 208, 179);
+    padding-bottom: 15%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.princ{
+    font-size: 25px ;
+    color: rgb(227, 3, 3);
+    font-weight: 900;
+    margin: 15px;
+}
+
+#informe p{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#informe div{
+    padding-top: 5%;
+}
+
+
+#informe li{
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+
+@media (min-width:330px) and (max-width:499px){ 
+
+
+    h1{
+        font-size: 20px;
+    }
+    
+    #formulario{
+        width: 85%; 
+    }
+    
+    
+    #formulario label{
+        font-size: 15px;
+    }
+    
+    #formulario input{
+        width: 50% ;
+        height: 15px;
+    }
+    
+    
+    #boton{
+        margin-left: 30%;
+        width: 30%;
+        height: 25px;
+        font-size: 15px;
+    }
+    
+    #informe{
+        font-size: 16px;
+        text-align: left;
+        padding-left: 3%;
+    }
+    
+    .princ{
+        font-size: 18px ;
+    }
+    
+    #informe p{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    
+    #informe div{
+        padding-top: 5%;
+    }
+    
+    
+    #informe li{
+        text-align: left;
+        margin-top: 2%;
+        margin-left: 8%;
+    }
+    
+
 }
 
 
@@ -97,6 +187,33 @@ h1{
         font-size: 19px;
     }
     
+
+    
+#informe{
+    margin: 16px;
+    padding-bottom: 12%;
+    font-size: 23px;
+
+}
+
+.princ{
+    font-size: 26px ;
+    margin: 12px;
+}
+
+#informe p{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#informe div{
+    padding-top: 6%;
+}
+
+
+#informe li{
+    margin-top: 3%;
+}
 
 }
 
@@ -137,11 +254,11 @@ h1{
 }
 
 
-@media (min-width: 1201px) and (max-width: 1400px) {      
+@media (min-width: 1201px) and (max-width: 1400px) { 
 
     
     h1{
-        font-size: 40px;
+        font-size: 28px;
     }
     
     #formulario{
@@ -169,4 +286,3 @@ h1{
     
 
 } 
-

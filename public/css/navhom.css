@@ -91,11 +91,11 @@ summary{
 }
 
 .fondo a{
-  padding-top: 3px;
+    padding-top: 2px;
 }
 
 .itemnarvar{
-    font-size: 13px;
+    font-size: 14px;
     color: blue;
     text-decoration: none;
     font-weight: bold;
@@ -191,13 +191,7 @@ summary{
     
     .itemnarvar{
     
-        font-size: 15px;
-        color: blue;
-        text-decoration: none;
-        font-style: oblique;
-        font-weight: bold;
-        
-    
+        font-size: 14px;
     }
 }
 
@@ -225,6 +219,12 @@ summary{
 
 .nav-menu-link {
     padding: 15px;
+}
+
+.itemnarvar{
+    
+    font-size: 16px;
+
 }
 
 }
@@ -257,6 +257,12 @@ summary{
     .header {
         height: 57px;
         width: 100%;
+    }
+    
+    .itemnarvar{
+    
+        font-size: 18px;
+    
     }
     
     
@@ -294,7 +300,18 @@ summary{
     
     }
 
+    .itemnarvar{
+    
+        font-size: 22px;
+    
+    }
+
 
     /* escritorio nav hecho*/
 
+}
+
+@media (min-width: 1401px) and (max-width: 1700px) {
+
+    
 }

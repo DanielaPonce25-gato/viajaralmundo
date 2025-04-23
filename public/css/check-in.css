@@ -80,17 +80,68 @@ iframe{
     color: rgb(109, 1, 1);
     font-family: cursive;
     margin-left: 10px;
+    margin-bottom: 4%;  
+
+}
+
+.importante p{
+
+    margin-top: 20px;
+}
+
+/* mobay lista */
+
+@media (min-width:330px) and (max-width:499px){  
+
+    
+.infcheck h1{
+    font-size: 23px;
+}
+
+.infcheck p{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#check-in-from{
+    border-width:2px;
+    margin-left: 11%;
+    width: 80%;
+}
+
+#check-in-from label{
+
+    width: max-content; 
+    margin-left: 10px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+#check-in-from input{
+    width: 35% ;
+}
+
+#check-in-from button{
+    border-width:2px;
+    font-size: 14px;
+}
+
+.importante{
+    font-weight: 600;
+    color: rgb(109, 1, 1);
+    font-family: cursive;
+    font-size: 15px;
+    margin-left: 10px;
+    padding-left: 3%;
     margin-top: 20px;
     margin-bottom: 4%;
 }
 
-.importante p{
     
-    margin-top: 20px;
-   
 }
 
-/* mobay lista */
 
 @media (min-width: 501px) and (max-width: 800px) {
 
@@ -228,4 +279,8 @@ iframe{
     }
 }
 
+@media (min-width: 1401px) and (max-width: 1700px) {
+
+    
+}
 /* media cuery escritorio lista */
