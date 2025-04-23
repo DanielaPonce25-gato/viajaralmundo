@@ -12,32 +12,39 @@
     <iframe id="narvar" src="/views/Navhome.html"frameborder="0"></iframe>   
 
     <br><br> <br><br>
-     
+    
     <h1>Subida de datos al panel de Envarcacion</h1>
 
-    <form method="post">
+    <section id="formulario">
+
+        <form method="post">
     
-        <label for="hora">Hora: </label>
-        <input type="time" name="hora"><br><br>
+            <label for="hora">Hora: </label>
+            <input type="time" name="hora"><br><br>
+        
+            <label for="aerolinea"> Aerolinea: </label>
+            <input type="image" name="aerolinea"><br><br>
+        
+            <label for="destino"> Destino: </label>
+            <input type="text" name="destino"><br><br>
+        
+            <label for="vuelo"> Vuelo: </label>
+            <input type="text" name="vuelo"><br><br>
+        
+            <label for="puerta"> Puerta: </label>
+            <input type="text" name="puerta"><br><br>
+        
+            <label for="observaciones"> Obserbaciones: </label>
+            <input type="text" name="observaciones"><br><br>
+        
+            <button id="boton"  type="submit" value="Enviar"> Enviar</button>
+        
+        </form>
+
+
+    </section>
+
     
-        <label for="aerolinea"> Aerolinea: </label>
-        <input type="image" name="aerolineas"><br><br>
-    
-        <label for="destinos"> Destino: </label>
-        <input type="text" name="destinos"><br><br>
-    
-        <label for="vuelo"> Vuelo: </label>
-        <input type="text" name="vuelo"><br><br>
-    
-        <label for="puerta"> Puerta: </label>
-        <input type="text" name="puerta"><br><br>
-    
-        <label for="observaciones"> Obserbaciones: </label>
-        <input type="text" name="observaciones"><br><br>
-    
-        <input type="submit" value="Enviar">
-    
-    </form>
 
 </main>
 

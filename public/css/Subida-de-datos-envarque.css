@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-   
+
 }
 
 iframe{
@@ -11,6 +11,7 @@ iframe{
 
 #pie{
     width:100%;
+    padding-top: 100%;
 }
 
 #narvar{
@@ -27,10 +28,145 @@ h1{
     padding-bottom: 20px;
 }
 
-form{
-   width:160px;
-   padding-top: 20px;
-   background-color: rgb(197, 215, 249);
-   margin-left: 80px;
-   width: max-content;
+#formulario{
+    background-color: rgba(127, 255, 212, 0.693);
+    box-sizing: border-box;
+    border-radius: 2%;
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    padding-left: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+
 }
+
+
+#formulario label{
+    font-size: 16px;
+}
+
+#formulario input{
+    width: 35% ;
+    height: 23px;
+}
+
+
+#boton{
+    width: 100px ;
+    height: 30px;
+    margin-left: 30%;
+    width: 30%;
+    height: 40px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width:2px;
+    border-color: rgb(13, 1, 243);
+    font-size: 18px;
+}
+
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+    h1{
+        font-size: 27px;
+    }
+    
+    #formulario{
+        width: 75%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+        padding-right: 70px;
+        margin-left: 14%;
+        margin-right: 16%;
+    
+    }
+
+
+    #formulario label{
+        font-size: 18px;
+    }
+
+    
+    #boton{
+        background-color: rgba(229, 236, 251, 0.885);
+        margin-left: 36%;
+        margin-top: 3%;
+        font-size: 19px;
+    }
+    
+
+}
+
+
+@media (min-width: 801px) and (max-width: 1200px) {
+
+    h1{
+        font-size: 35px;
+    }
+    
+    #formulario{
+        width: 80%;
+        padding-left: 12;
+    
+    }
+
+
+    #formulario label{
+        font-size: 20px;
+    }
+
+    #formulario input{
+
+        width: 30% ;
+        height: 20px;
+    }
+    
+
+    
+    #boton{
+        background-color: rgba(229, 236, 251, 0.885);
+        margin-left: 30%;
+        margin-top: 3%;
+        font-size: 19px;
+    }
+    
+
+}
+
+
+@media (min-width: 1201px) and (max-width: 1400px) {      
+
+    
+    h1{
+        font-size: 40px;
+    }
+    
+    #formulario{
+        width: 85%;
+        padding-left: 15%;
+    
+    }
+
+
+    #formulario label{
+        font-size: 25px;
+    }
+
+    #formulario input{
+        width: 33% ;
+        height: 30px;
+    }
+    
+    #boton{
+        background-color: rgba(229, 236, 251, 0.885);
+        margin-left: 25%;
+        margin-top: 3%;
+        font-size: 25px;
+    }
+    
+
+} 
+
