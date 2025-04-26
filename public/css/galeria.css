@@ -30,9 +30,8 @@ audio{
 }
 
 .imagen{
-    width: max-content;
-    width: 200px;
-    height: 360px;
+    width: 220px;
+    height: 400px;
 }
 
 .columna{
@@ -57,7 +56,7 @@ audio{
 }
 
 .parrafo p{
-    font-size: 13px;
+    font-size: 12px;
     padding-right: 6px;
 }
 
@@ -119,7 +118,7 @@ audio{
     .imagen{
     
         width: 250px;
-        height: 370px;
+        height: 350px;
     }
     
     .columna{
