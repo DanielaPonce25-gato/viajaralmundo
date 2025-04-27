@@ -93,7 +93,7 @@ summary{
 }
 
 .fondo{
-    background-color: #c7eff7;
+    background-color: #e3dfdfd3;
 
 }
 
@@ -108,6 +108,12 @@ summary{
     font-weight: bold;
     
 
+}
+
+.itemnarvar:hover,
+.itemnarvar_active {
+    background-color: #08cffb;
+    color: #ffffff;
 }
 
 

@@ -43,7 +43,7 @@ audio{
 .parrafo{
     padding-top: 1%;
     padding-left: 20px;
-    margin-right: 20px;
+    padding-right: 20px;
     font-family: 'Lucida Sans';
     background-color: rgba(184, 184, 184, 0.777);
 }
@@ -57,7 +57,7 @@ audio{
 
 .parrafo p{
     font-size: 12px;
-    padding-right: 6px;
+    padding-right: 5px;
 }
 
 .tren{
@@ -71,17 +71,17 @@ audio{
 
     .imagen{
         width: 150px;
-        height: 310px;
+        height: 430px;
     }
     
     .columna{
-        padding-left: 3%;
+        padding-left: 2%;
     }
     
     .parrafo{
         padding-top: 1%;
         padding-left: 8px;
-        margin-right: 8px;
+        padding-right: 8px;
     }   
 
     
@@ -92,7 +92,6 @@ audio{
     
     .parrafo p{
         font-size: 10px;
-        padding-right: 6px;
         margin-bottom: 5px;
     }
     
@@ -118,7 +117,7 @@ audio{
     .imagen{
     
         width: 250px;
-        height: 350px;
+        height: 500px;
     }
     
     .columna{
@@ -126,8 +125,8 @@ audio{
     }
     
     .parrafo{
-        padding-left: 8px;
-        margin-right: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
     .parrafo h1{
@@ -138,14 +137,13 @@ audio{
     
     .parrafo p{
         font-size: 12px;
-        padding-right: 6px;
     }
     
     .tren{
         width: 92%;
         height: 20%;
         padding-top: 8px;
-        padding-left: 20px;
+        padding-left: 25px;
     }
 
 
@@ -162,24 +160,23 @@ audio{
     .imagen{
     
         width: 250px;
-        height: 250px;
+        height: 350px;
     }
     
     .parrafo{
         text-align: justify;
-        padding-left: 13px;
-        margin-right: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
     .parrafo h1{
         font-size: 28px;
         text-align: center;
-        padding-bottom: 15px;
+        padding-bottom: 18px;
     }
     
     .parrafo p{
         font-size: 13px;
-        padding-right: 6px;
     }
     
     .tren{
@@ -193,5 +190,41 @@ audio{
 }
 
 @media (min-width: 1201px) and (max-width: 1400px){  /* falta */
+
+
+    
+    #volar{
+        height: 400px;
+    }
+
+    .imagen{
+    
+        width: 500px;
+        height: 350px;
+    }
+    
+    .parrafo{
+        text-align: justify;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .parrafo h1{
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 18px;
+    }
+    
+    .parrafo p{
+        font-size: 13px;
+    }
+    
+    .tren{
+        width: 100%;
+        height: 60%;
+        padding-top: 8px;
+        padding-left: 0px;
+    }
+
 
 }
