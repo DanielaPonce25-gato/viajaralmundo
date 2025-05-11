@@ -1,5 +1,5 @@
 .titulofooter{
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
     margin-bottom:10px ;
 }
@@ -34,7 +34,7 @@
 
     .titulofooter{
         padding-top: 10px;
-        font-size: 15px;
+        font-size: 17px;
     }
     
     .info{
@@ -49,7 +49,7 @@
     
     .info img{
         height: auto;
-        width: 26px;
+        width: 30px;
         padding: 2px;
     }
 
@@ -60,7 +60,7 @@
 
     .titulofooter{
         text-align: center;
-        font-size: 18px;
+        font-size: 22px;
     } 
 
 
@@ -70,7 +70,7 @@
     }
 
     .info img{
-        width: 28px;
+        width: 32px;
         height: auto;
         padding: 2px;
     }
@@ -88,10 +88,10 @@
 @media (min-width: 801px) and (max-width:1000px){  
 
     .titulofooter{
-        font-size: 15px;
+        font-size: 24px;
     }
-     
-    .iten{                      /*listo*/
+
+    .iten{                      
         font-size: 13px;
         padding-bottom: 10px ;
     }
@@ -99,7 +99,7 @@
 
     .info img{
         height: auto;
-        width: 30px;
+        width: 33px;
         padding: 2px;
     }
     
@@ -108,7 +108,7 @@
         justify-content:space-between; 
         padding-left: 140px;
     }
-     
+
 }
 
 @media (min-width: 1001px) and (max-width:1200px){  /* escritorio hecho*/
@@ -117,8 +117,8 @@
     font-size: 23px;
     margin-bottom: 20px;
 }
- 
-.iten{                      /*listo*/
+
+.iten{                      
     font-size: 16px;
     padding-bottom: 10px ;
 }
@@ -137,7 +137,6 @@
     margin-left: 350px;
 
 }
- 
 
 }
 
@@ -146,36 +145,32 @@
     .titulofooter{
         font-size: 25px;
         margin-bottom: 20px;
-       }
+    }
     
-     .iten{                      /*listo*/
+    .iten{                      
         font-size: 17px;
         padding-bottom: 10px ;
-     }
-   
-     .footer-servicio-social{
-       width: 100% ;
-       margin-bottom: -20px;
+    }
+
+    .footer-servicio-social{
+        width: 100% ;
+        margin-bottom: -20px;
     } 
 
     .info img{
         height: auto;
         width: 50px;
         padding: 2px;
-      }
-  
+    }
+
     .info{
         display: flex; 
         justify-content:space-between; 
         margin-right: 400px ;
         margin-bottom: 15px;
         margin-left: 350px;
-  
-      }
-   
+
+    }
+
 }
 
-@media (min-width: 1401px) and (max-width: 1700px) {
-
-    
-}

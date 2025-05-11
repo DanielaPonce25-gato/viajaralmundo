@@ -1,242 +1,198 @@
-*{
-    margin: 0px;
-    padding: 0px;
+.columna, iframe {
+  display: flex;
 }
 
-
-iframe{
-    display: flex;
-    position: absolute;
+#volar, #narvar, #pie {
+  width: 100%;
 }
 
-#pie{
-    width:100%;
+.parrafo {
+  font-family: "Lucida Sans";
+  background-color: rgba(184, 184, 184, 0.777);
 }
 
-#narvar{
-    width: 100%;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+iframe {
+  position: absolute;
+}
+
+#narvar {
+  height: 100%;
+}
+
+#volar {
+  height: 150px;
+}
+
+audio {
+  width: 50%;
+}
+
+.imagen {
+  width: 220px;
+  height: 400px;
+}
+
+.columna {
+  padding-left: 3%;
+  padding-top: 3%;
+}
+
+.parrafo {
+  padding-top: 1%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+.tren {
+  width: 90%;
+  height: 30%;
+  padding-top: 8px;
+  padding-left: 25px;
+}
+
+@media (min-width: 330px) and (max-width: 499px) {
+  .imagen {
+    width: 150px;
     height: 100%;
-    
-}
-
-
-#volar{
-    width: 100%;
-    height: 150px;
-}
-
-audio{
-    width: 50%;
-}
-
-.imagen{
-    width: 220px;
-    height: 400px;
-}
-
-.columna{
-    display: flex;
-    padding-left: 3%;
-    padding-top: 3%;
-}
-
-.parrafo{
+  }
+  .columna {
+    padding-left: 2%;
+  }
+  .parrafo {
     padding-top: 1%;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: 'Lucida Sans';
-    background-color: rgba(184, 184, 184, 0.777);
-}
-
-.parrafo h1{
-    font-size: 18px;
-    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  h1 {
+    font-size: 17px;
     padding-bottom: 8px;
-    text-decoration: underline;
-}
-
-.parrafo p{
-    font-size: 12px;
+  }
+  p {
+    font-size: 13px;
+    padding-left: 3px;
+    margin-bottom: 5px;
+  }
+  .tren {
+    width: 98%;
+    height: 20%;
+    padding-top: 20px;
+    padding-left: 5px;
     padding-right: 5px;
+  }
 }
-
-.tren{
-    width: 90%;
-    height: 30%;
+@media (min-width: 501px) and (max-width: 800px) {
+  #volar {
+    height: 200px;
+  }
+  .imagen {
+    width: 250px;
+    height: 100%;
+  }
+  .columna {
+    padding-left: 3%;
+  }
+  .parrafo {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  p {
+    font-size: 13px;
+    padding-bottom: 8px;
+  }
+  .tren {
+    width: 92%;
+    height: 20%;
     padding-top: 8px;
     padding-left: 25px;
+  }
 }
-
-@media (min-width:330px) and (max-width:499px){  
-
-    .imagen{
-        width: 150px;
-        height: 430px;
-    }
-    
-    .columna{
-        padding-left: 2%;
-    }
-    
-    .parrafo{
-        padding-top: 1%;
-        padding-left: 8px;
-        padding-right: 8px;
-    }   
-
-    
-    .parrafo h1{
-        font-size: 17px;
-        padding-bottom: 8px;
-    }
-    
-    .parrafo p{
-        font-size: 10px;
-        margin-bottom: 5px;
-    }
-    
-    .tren{
-        width: 98%;
-        height: 20%;
-        padding-top: 20px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    
-
-}
-
-
-@media (min-width: 501px) and (max-width: 800px) {
-
-
-    #volar{
-        height: 200px;
-    }
-
-    .imagen{
-    
-        width: 250px;
-        height: 500px;
-    }
-    
-    .columna{
-        padding-left: 3%;
-    }
-    
-    .parrafo{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    .parrafo h1{
-        font-size: 24px;
-        text-align: center;
-        padding-bottom: 15px;
-    }
-    
-    .parrafo p{
-        font-size: 12px;
-    }
-    
-    .tren{
-        width: 92%;
-        height: 20%;
-        padding-top: 8px;
-        padding-left: 25px;
-    }
-
-
-}
-
-
 @media (min-width: 801px) and (max-width: 1200px) {
-
-
-    #volar{
-        height: 300px;
-    }
-
-    audio{
-        padding-left: 15%;
-        padding-top: 2%;
-        width:80%;
-    }
-
-    .imagen{
-    
-        width: 250px;
-        height: 350px;
-    }
-    
-    .parrafo{
-        text-align: justify;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    .parrafo h1{
-        font-size: 28px;
-        text-align: center;
-        padding-bottom: 18px;
-    }
-    
-    .parrafo p{
-        font-size: 13px;
-    }
-    
-    .tren{
-        width: 100%;
-        height: 60%;
-        padding-top: 30px;
-        padding-left: 0px;
-    }
-
-
+  #volar {
+    height: 300px;
+  }
+  audio {
+    padding-top: 2%;
+    width: 80%;
+    padding-left: 15%;
+  }
+  .imagen {
+    width: 250px;
+    height: 350px;
+  }
+  .parrafo {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .tren {
+    width: 100%;
+    height: 60%;
+    padding-top: 30px;
+    padding-left: 0px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  #volar {
+    height: 400px;
+  }
+  audio {
+    padding-top: 2%;
+    width: 80%;
+    padding-left: 10%;
+  }
+  .imagen {
+    width: 500px;
+    height: 400px;
+  }
+  .parrafo {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h1 {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .tren {
+    width: 100%;
+    height: 60%;
+    padding-top: 50px;
+    padding-left: 0px;
+  }
 }
 
-@media (min-width: 1201px) and (max-width: 1400px){ 
-
-
-    
-    #volar{
-        height: 400px;
-    }
-
-    audio{
-        padding-left: 10%;
-        padding-top: 2%;
-        width:80%;
-    }
-
-    .imagen{
-    
-        width: 500px;
-        height: 400px;
-    }
-    
-    .parrafo{
-        text-align: justify;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    .parrafo h1{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    
-    .parrafo p{
-        font-size: 18px;
-    }
-    
-    .tren{
-        width: 100%;
-        height: 60%;
-        padding-top: 50px;
-        padding-left: 0px;
-    }
-
-
-}
+/*# sourceMappingURL=galeria.css.map */

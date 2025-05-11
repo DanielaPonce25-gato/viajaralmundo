@@ -1,0 +1,272 @@
+
+body{
+    background-image:url("cielo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120em;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+label{
+    font-weight: 700;
+    font-size: 23px;
+    color: aliceblue;
+    margin-left: 10%;
+}
+
+input{
+    color: rgb(101, 97, 97);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+button{
+    margin-left: 20px;
+    width: 18%;
+    height: 30px;
+    color: black;
+    font-weight: 800;
+}
+
+.mensaje{
+    margin-top: 4%;
+    margin-left: 5%;
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans';
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.contenedor {
+    margin: 0%;
+    padding: 0%;
+}
+
+.ala {
+    width:90px; 
+    height: 500px; 
+    transform: rotate(90deg); /* rota la imagenes */
+    margin: 0%;
+    margin-left: 40%;
+}
+
+
+.trasera{
+    padding-bottom: 0px;
+    height: 270px;
+    padding-top: 0%;
+    margin-left: 60%;
+
+}
+
+.trompa{
+    margin: 0px;
+    padding-bottom: 30px;
+    height: 180px;
+    margin-left: 40%;
+}
+
+.asientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    padding: 0%; 
+}
+
+
+.fila {
+    display: flex;
+    margin-bottom: 0%;
+}
+
+
+.asiento {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    margin: 8px; /* Espacio entre las alas y los asientos */
+    border-radius: 5px;
+    cursor: pointer;
+
+    &.seleccionado {
+        background-color: #0f0;
+    }
+
+    &.ocupado {
+        background-color: #f00;
+        cursor: not-allowed;
+    }
+}
+
+
+
+@media (min-width:330px) and (max-width:499px){  
+
+    
+    label{
+        font-size: 25px;
+        margin-left:6%;
+    }
+
+
+    input{
+
+        width: 60px;
+        height: 20px;
+
+    }
+
+
+    button{
+        margin-left: 90%;
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 25%;
+    }
+
+    .mensaje{
+        margin-left: 10%;
+        font-size: 20px;
+    }
+
+    .contenedor {
+        margin-left: 20%;
+    }
+
+    .ala {
+        width: 90px;
+        height: 500px;
+        margin-left: 43%;
+    }
+
+
+    .trasera{
+        height: 265px;
+        margin-left: 60%;
+
+    }
+
+    .trompa{
+        padding-bottom: 0px;
+        height: 190px;
+        margin-left: 50%;
+    }
+
+
+    .asiento {
+        margin: 4px; /* Espacio entre las alas y los asientos */
+
+    }
+
+
+}
+
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+    
+    label{
+        font-size: 25px;
+        margin-left: 8%;
+    }
+
+    input{
+        font-size: 23px;
+
+    }
+
+    button{
+
+        width: 20%;
+        height: 30px;
+
+    }
+
+    .mensaje{
+        font-size: 19px;
+    }
+
+    .contenedor {
+        margin: 0%;
+    
+    }
+
+    .ala {
+        width:100px; 
+        height: 540px; 
+        margin-left: 40%;
+    }
+
+
+    .trasera{
+        height: 290px;
+        margin-left: 50%;
+
+    }
+
+    .trompa{
+        padding-bottom: 0px;
+        height: 190px;
+        margin-left: 40%;
+    }
+
+
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+
+        
+    label{
+        font-size: 30px;
+        margin-left: 15%;
+    }
+
+    input{
+        font-size: 23px;
+
+    }
+
+    button{
+
+        font-size: 23px;
+        width: 20%;
+        height: 40px;
+
+    }
+
+    .mensaje{
+        font-size: 22px;
+        margin-left: 20%;
+    } 
+
+
+    .ala {
+        width:180px; 
+        height: 600px; 
+        margin-left: 40%;
+    }
+
+
+    .trasera{
+        height: 290px;
+        margin-left: 50%;
+        padding: 0%;
+
+    }
+
+    .trompa{
+        padding-bottom: 0px;
+        height: 190px;
+        margin-left: 40%;
+    }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {  //falta 1201px a 1400px
+
+}

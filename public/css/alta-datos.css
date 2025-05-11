@@ -1,0 +1,219 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+iframe {
+  display: flex;
+  position: absolute;
+}
+
+#pie {
+  width: 100%;
+  padding-top: 100%;
+}
+
+#narvar {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+/* Anidamiento */
+section#formulario {
+  background-color: rgba(127, 255, 212, 0.693);
+  box-sizing: border-box;
+  border-radius: 2%;
+  width: 70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+section#formulario form label {
+  font-size: 16px;
+}
+section#formulario form input {
+  width: 35%;
+  height: 23px;
+}
+section#formulario form button#boton {
+  margin-left: 30%;
+  width: 30%;
+  height: 40px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(13, 1, 243);
+  font-size: 18px;
+}
+
+section#informe {
+  margin: 15px;
+  background-color: rgb(249, 208, 179);
+  padding-bottom: 15%;
+  font-weight: 700;
+  text-align: center;
+  font-size: 21px;
+  font-family: "Courier New", Courier, monospace;
+}
+section#informe div {
+  padding-top: 5%;
+}
+section#informe div p.princ {
+  font-size: 25px;
+  color: rgb(227, 3, 3);
+  font-weight: 900;
+  margin: 15px;
+}
+section#informe div p {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+section#informe div {
+  padding-top: 5%;
+}
+section#informe div ul li {
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+@media (min-width: 330px) and (max-width: 499px) {
+  h1 {
+    font-size: 20px;
+  }
+  section#formulario {
+    width: 85%;
+  }
+  section#formulario form label {
+    font-size: 17px;
+  }
+  section#formulario form input {
+    width: 50%;
+    height: 15px;
+  }
+  section#formulario form button#boton {
+    margin-left: 30%;
+    width: 30%;
+    height: 25px;
+    font-size: 15px;
+  }
+  section#informe {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 3%;
+  }
+  section#informe div p.princ {
+    font-size: 18px;
+  }
+  section#informe div p {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  section#informe div {
+    padding-top: 5%;
+  }
+  section#informe div ul li {
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 8%;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  h1 {
+    font-size: 27px;
+  }
+  section#formulario {
+    width: 75%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 70px;
+    margin-left: 14%;
+    margin-right: 16%;
+  }
+  section#formulario form label {
+    font-size: 19px;
+  }
+  section#formulario form button#boton {
+    background-color: rgba(229, 236, 251, 0.885);
+    margin-left: 36%;
+    margin-top: 3%;
+    font-size: 19px;
+  }
+  section#informe {
+    margin: 16px;
+    padding-bottom: 12%;
+    font-size: 23px;
+  }
+  section#informe div p.princ {
+    font-size: 26px;
+    margin: 12px;
+  }
+  section#informe div p {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  section#informe div {
+    padding-top: 6%;
+  }
+  section#informe div ul li {
+    margin-top: 3%;
+  }
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  h1 {
+    font-size: 35px;
+  }
+  section#formulario {
+    width: 80%;
+    padding-left: 12;
+  }
+  section#formulario form label {
+    font-size: 22px;
+  }
+  section#formulario form input {
+    width: 30%;
+    height: 23px;
+  }
+  section#formulario form button#boton {
+    background-color: rgba(229, 236, 251, 0.885);
+    margin-left: 30%;
+    margin-top: 3%;
+    font-size: 19px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  h1 {
+    font-size: 28px;
+  }
+  section#formulario {
+    width: 85%;
+    padding-left: 15%;
+  }
+  section#formulario form label {
+    font-size: 25px;
+  }
+  section#formulario form input {
+    width: 33%;
+    height: 30px;
+  }
+  section#formulario form button#boton {
+    background-color: rgba(229, 236, 251, 0.885);
+    margin-left: 25%;
+    margin-top: 3%;
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=alta-datos.css.map */

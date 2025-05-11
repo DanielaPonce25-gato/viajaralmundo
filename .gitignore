@@ -1,0 +1,19 @@
+# ignora la carpeta completa  node_modules/
+
+node_modules/  
+
+controller/
+
+router/
+
+data/
+
+# ignora archivo .destinos
+
+.destinos
+
+# ignota una carpeta que esta en otra carpeta  views/productos
+
+views/productos
+
+.app

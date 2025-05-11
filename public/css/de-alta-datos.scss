@@ -28,7 +28,11 @@ h1{
     padding-bottom: 20px;
 }
 
-#formulario{
+
+/* Anidamiento */
+
+section#formulario{
+
     background-color: rgba(127, 255, 212, 0.693);
     box-sizing: border-box;
     border-radius: 2%;
@@ -39,32 +43,39 @@ h1{
     padding-left: 10%;
     margin-left: 10%;
     margin-bottom: 10%;
+    
+    form{
+        
+        label{
 
+            font-size: 16px;
+
+        }
+
+        input{
+
+            width: 35% ;
+            height: 23px;  
+
+        }
+
+        button#boton{
+
+            margin-left: 30%;
+            width: 30%;
+            height: 40px;
+            box-sizing: border-box;
+            border-style: solid;
+            border-width:2px;
+            border-color: rgb(13, 1, 243);
+            font-size: 18px; 
+
+        }
+    }
 }
 
+section#informe{
 
-#formulario label{
-    font-size: 16px;
-}
-
-#formulario input{
-    width: 35% ;
-    height: 23px;
-}
-
-
-#boton{
-    margin-left: 30%;
-    width: 30%;
-    height: 40px;
-    box-sizing: border-box;
-    border-style: solid;
-    border-width:2px;
-    border-color: rgb(13, 1, 243);
-    font-size: 18px;
-}
-
-#informe{
     margin: 15px;
     background-color: rgb(249, 208, 179);
     padding-bottom: 15%;
@@ -72,29 +83,45 @@ h1{
     text-align: center;
     font-size: 21px;
     font-family: 'Courier New', Courier, monospace;
-}
 
-.princ{
-    font-size: 25px ;
-    color: rgb(227, 3, 3);
-    font-weight: 900;
-    margin: 15px;
-}
+    div{
 
-#informe p{
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
+        padding-top: 5%;
 
-#informe div{
-    padding-top: 5%;
-}
+        p.princ{
 
+            font-size: 25px ;
+            color: rgb(227, 3, 3);
+            font-weight: 900;
+            margin: 15px;
 
-#informe li{
-    text-align: left;
-    margin-top: 2%;
-    margin-left: 10%;
+        }
+
+        p{  
+
+            padding-top: 4%;
+            padding-bottom: 4%;
+
+        }
+
+    }
+
+    div{
+
+        padding-top: 5%;
+
+        ul{
+
+            li{
+
+                text-align: left;
+                margin-top: 2%;
+                margin-left: 10%;
+
+            }
+        }
+
+    }
 }
 
 
@@ -105,49 +132,49 @@ h1{
         font-size: 20px;
     }
     
-    #formulario{
+    section#formulario {
         width: 85%; 
     }
     
     
-    #formulario label{
-        font-size: 15px;
+    section#formulario form label  {
+        font-size: 17px;
     }
     
-    #formulario input{
+    section#formulario form input{
         width: 50% ;
         height: 15px;
     }
     
     
-    #boton{
+    section#formulario form button#boton{
         margin-left: 30%;
         width: 30%;
         height: 25px;
         font-size: 15px;
     }
     
-    #informe{
+    section#informe{
         font-size: 16px;
         text-align: left;
         padding-left: 3%;
     }
     
-    .princ{
+    section#informe div p.princ{
         font-size: 18px ;
     }
     
-    #informe p{
+    section#informe div p{
         padding-top: 2%;
         padding-bottom: 2%;
     }
     
-    #informe div{
+    section#informe div {
         padding-top: 5%;
     }
     
     
-    #informe li{
+    section#informe div ul li{
         text-align: left;
         margin-top: 2%;
         margin-left: 8%;
@@ -156,14 +183,13 @@ h1{
 
 }
 
-
 @media (min-width: 501px) and (max-width: 800px) {
 
     h1{
         font-size: 27px;
     }
     
-    #formulario{
+    section#formulario{
         width: 75%;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -175,12 +201,12 @@ h1{
     }
 
 
-    #formulario label{
-        font-size: 18px;
+    section#formulario form label{
+        font-size: 19px;
     }
 
     
-    #boton{
+    section#formulario form button#boton {
         background-color: rgba(229, 236, 251, 0.885);
         margin-left: 36%;
         margin-top: 3%;
@@ -189,34 +215,33 @@ h1{
     
 
     
-#informe{
-    margin: 16px;
-    padding-bottom: 12%;
-    font-size: 23px;
+    section#informe {
+        margin: 16px;
+        padding-bottom: 12%;
+        font-size: 23px;
+
+    }
+
+    section#informe div p.princ {
+        font-size: 26px ;
+        margin: 12px;
+    }
+
+    section#informe div p{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    section#informe div{
+        padding-top: 6%;
+    }
+
+
+    section#informe div ul li{
+        margin-top: 3%;
+    }
 
 }
-
-.princ{
-    font-size: 26px ;
-    margin: 12px;
-}
-
-#informe p{
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-#informe div{
-    padding-top: 6%;
-}
-
-
-#informe li{
-    margin-top: 3%;
-}
-
-}
-
 
 @media (min-width: 801px) and (max-width: 1200px) {
 
@@ -224,26 +249,26 @@ h1{
         font-size: 35px;
     }
     
-    #formulario{
+    section#formulario {
         width: 80%;
         padding-left: 12;
     
     }
 
 
-    #formulario label{
-        font-size: 20px;
+    section#formulario form label {
+        font-size: 22px;
     }
 
-    #formulario input{
+    section#formulario form input {
 
         width: 30% ;
-        height: 20px;
+        height: 23px;
     }
     
 
     
-    #boton{
+    section#formulario form button#boton{
         background-color: rgba(229, 236, 251, 0.885);
         margin-left: 30%;
         margin-top: 3%;
@@ -253,7 +278,6 @@ h1{
 
 }
 
-
 @media (min-width: 1201px) and (max-width: 1400px) { 
 
     
@@ -261,23 +285,23 @@ h1{
         font-size: 28px;
     }
     
-    #formulario{
+    section#formulario{
         width: 85%;
         padding-left: 15%;
     
     }
 
 
-    #formulario label{
+    section#formulario form label{
         font-size: 25px;
     }
 
-    #formulario input{
+    section#formulario form input{
         width: 33% ;
         height: 30px;
     }
     
-    #boton{
+    section#formulario form button#boton{
         background-color: rgba(229, 236, 251, 0.885);
         margin-left: 25%;
         margin-top: 3%;

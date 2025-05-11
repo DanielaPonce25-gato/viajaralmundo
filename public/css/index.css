@@ -1,1042 +1,811 @@
-*{
-    margin: 0px;
-    padding: 0px;
-   
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-iframe{
-    display: flex;
-    position: absolute;
+iframe {
+  display: flex;
+  position: absolute;
 }
 
-#pie{
-    width:100%;
+#pie {
+  width: 100%;
 }
 
-#narvar{
-    width: 100%;
-    height: 100%;
-    
+#narvar {
+  width: 100%;
+  height: 100%;
 }
 
-.fonlis2{
-    background-color: rgb(218, 216, 216);
-    width: 80%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right:10%;
+/* Anidamiento */
+form {
+  background-color: rgb(218, 216, 216);
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+form li {
+  text-align: 5px;
+  font-size: 15px;
+  text-decoration: solid;
+  color: rgb(30, 29, 29);
+  font-style: oblique;
+  padding-right: 5px;
+  list-style: none;
+}
+form li img.icon {
+  margin-top: 17px;
+  height: 25px;
+  width: 20px;
+  padding-right: 8px;
+  padding-left: 5px;
+}
+form li button {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: 70px;
+  height: 30px;
+  width: max-content;
+  border-color: rgb(171, 228, 245);
+  background-color: rgb(176, 234, 250);
+}
+form li button img.lupa {
+  height: 18px;
+  width: 20px;
+  padding-left: 5px;
 }
 
-.icon{
-    margin-top: 17px;
-    height: 25px;
-    width: 20px;
-    padding-right:8px;
-    padding-left: 5px;
-}  
-
-.item{
-    text-align: 5px;
-    font-size: 15px;
-    text-decoration: solid;
-    color:rgb(30, 29, 29);
-    font-style: oblique;
-    padding-right:5px;
-    list-style: none;
+div.destinos {
+  background-color: rgba(197, 125, 242, 0.637);
+  display: flexbox;
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 22px;
 }
-
-
-input{
-    width: 100px;
+div.destinos div.nuevo {
+  background-color: rgba(124, 243, 76, 0.7450980392);
+  font-family: Georgia;
+  text-align: center;
+  display: inline-block;
+  border-radius: 14px;
+  width: 43%;
+  height: auto;
+  margin-left: 19px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
-
-.busqueda{
-    margin-top: 20px;
-    margin-bottom: 15px;
-    font-size: 14px;
-    width: 70px;
-    height: 30px;
-    width: max-content;
-    border-color: rgb(171, 228, 245); 
-    background-color: rgb(176, 234, 250); 
+div.destinos div.nuevo h1 {
+  text-align: center;
+  font-style: oblique;
+  block-size: 30px;
+  background-color: rgba(253, 253, 253, 0.769);
+  color: rgb(41, 60, 233);
+  font-size: 24px;
 }
-
-.lupa{
-    height: 18px;
-    width: 20px;
-    padding-left:5px; 
+div.destinos div.nuevo h2 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  block-size: 22px;
+  font-size: 19px;
 }
-
-
-.destinos{
-    background-color:rgba(197, 125, 242, 0.637);
-    display:flexbox;
-    width: 90%;
-    height: auto;
-    margin-top: 20px;
-    margin-left:22px;
+div.destinos div.nuevo img {
+  width: 80%;
+  height: auto;
+  padding: 6px;
 }
-
-
-.nuevo{                                          
-    background-color:#7cf34cbe;
-    font-family:Georgia;
-    text-align: center;
-    display: inline-block;
-    border-radius: 14px;
-    width: 43%;
-    height: auto ;
-    margin-left: 19px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-
-.nuevo p{                                        
-    text-align:center;
-    font-style: italic;
-    text-decoration: solid;
-    background-color: beige;
-    color: rgb(91, 46, 0);
-    font-size: 11px;
-    padding-top: 6px;
-   
-
-}
-
-.nuevo h1{                                        
-    text-align: center;
-    font-style:oblique;
-    block-size: 30px;
-    background-color: rgba(253, 253, 253, 0.769);
-    color:rgb(41, 60, 233);
-    font-size: 24px;
-
-}
-
-.nuevo h2{
-    padding-top: 3px;
-    padding-bottom: 3px;
-    block-size: 22px;
-    font-size: 19px;
-}
-
-.nuevo img{                                    
-    width: 80%;
-    height: auto ; 
-    padding: 6px;
+div.destinos div.nuevo p {
+  text-align: center;
+  font-style: italic;
+  text-decoration: solid;
+  background-color: beige;
+  color: rgb(91, 46, 0);
+  font-size: 13px;
+  padding-top: 6px;
 }
 
 /* medios de pago */
-.fondo{
-    background-color:  rgba(193, 244, 242, 0.813);
+section.fondo {
+  background-color: rgba(193, 244, 242, 0.813);
+  width: 90%;
+  height: 70%;
+  margin-left: 5%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+section.fondo div.medio img {
+  width: 70%;
+  height: 50%;
+  margin-top: 22px;
+  margin-left: 16%;
+}
+
+div.chekin {
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+  display: flex;
+}
+div.chekin div.infochekin {
+  width: 200px;
+  height: 400px;
+}
+div.chekin div.infochekin img {
+  width: 100px;
+  height: 130px;
+  padding-left: 50px;
+}
+div.chekin div.infochekin h1 {
+  font-size: 20px;
+  text-align: center;
+}
+div.chekin div.infochekin p.parafos {
+  padding-top: 5px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+}
+div.chekin div.conteychekin {
+  width: 270px;
+  height: 400px;
+}
+div.chekin div.conteychekin div div.segtitulocheck {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 5cm;
+  padding-left: 20px;
+}
+div.chekin div.conteychekin div div.segtitulocheck img {
+  width: 15%;
+  height: 10%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+div.chekin div.conteychekin div div.segtitulocheck h2 {
+  padding-top: 20px;
+  padding-right: 40px;
+  font-size: 17px;
+}
+div.chekin div.conteychekin div p.parafos {
+  padding-top: 5px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+}
+
+div.informacion {
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 19px;
+  margin-left: 19px;
+}
+div.informacion div.plantillainfo {
+  background-color: rgba(217, 217, 231, 0.569);
+  height: 150px;
+  width: 235px;
+  box-sizing: border-box;
+  border-radius: 4%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkseagreen;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-bottom: 6px;
+}
+div.informacion div.plantillainfo div.tituloinfo {
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+  margin-left: 1px;
+}
+div.informacion div.plantillainfo div.tituloinfo img {
+  width: 42px;
+}
+div.informacion div.plantillainfo div.tituloinfo h1 {
+  font-size: 15px;
+  font-family: cursive;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 3px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+div.informacion div.plantillainfo span {
+  font-size: 13px;
+  padding-bottom: 2px;
+}
+div.informacion div.plantillainfo a {
+  display: flex;
+  justify-content: space-between;
+}
+div.informacion div.plantillainfo a img.flechas {
+  width: 40px;
+  height: 30px;
+  margin-left: 70%;
+}
+
+@media (min-width: 330px) and (max-width: 499px) {
+  div.destinos {
+    margin-left: 12px;
+  }
+  div.destinos div.nuevo {
+    width: 40%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  div.destinos div.nuevo p {
+    color: rgb(91, 46, 0);
+    font-size: 10px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+  }
+  div.destinos div.nuevo h1 {
+    block-size: 20px;
+    font-size: 16px;
+  }
+  div.destinos div.nuevo h2 {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    block-size: 22px;
+    font-size: 17px;
+  }
+  div.destinos div.nuevo img {
     width: 90%;
-    height: 70%;
-    margin-left: 5%;
-    margin-top: 5%;
+    height: auto;
+    padding: 6px;
+  }
+  /* medios de pago */
+  section.fondo {
+    margin-left: 4%;
+  }
+  div.informacion {
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
-}
-
-.medio img{
-
-    width: 70%;
-    height: 50%;
-    margin-top:22px ;
-    margin-left:16% ;
-}
-
-.informacion{
-    margin-top: 7%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 19px;
-    margin-left: 19px;
-    
-}
-
-.plantillainfo{
-
-    background-color: rgba(217, 217, 231, 0.569);
-    height:150px ;
-    width: 235px ;
-    box-sizing: border-box;
-    border-radius: 4%;
-    border-style: solid;
-    border-width:2px;
-    border-color: darkseagreen;
-    padding-left: 2px;
-    padding-right: 0px;
+    margin-right: 2px;
+    margin-left: 0px;
+  }
+  div.informacion div.plantillainfo {
+    height: 140px;
+    width: 174px;
+    padding-left: 3px;
+    padding-right: 5px;
     padding-bottom: 6px;
-    
-
-}
-
-.tituloinfo{
-   display: flex;
-   justify-content: space-between;
-   width: max-content;
-   margin-left: 1px;
-}
-
-.tituloinfo img{
-    width: 42px;
-}
-
-.informacion h1{
-    font-size: 15px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo {
+    margin-left: 0px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo img {
+    width: 33px;
+    padding-left: 1px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo h1 {
+    font-size: 11px;
     font-family: cursive;
     text-decoration: underline;
     font-weight: 500;
     margin-right: 3px;
     margin-top: 10px;
     padding-bottom: 5px;
-}
-
-.plantillainfo span{
-    font-size: 13px;
-    padding-bottom: 2px;
-}
-
-.plantillainfo a{
+  }
+  div.informacion div.plantillainfo span {
+    font-size: 12px;
+    padding-bottom: 3px;
+  }
+  div.informacion div.plantillainfo a {
     display: flex;
     justify-content: space-between;
-}
-
-.flechas{
-    width:40px ;
+  }
+  div.informacion div.plantillainfo a img.flechas {
+    width: 40px;
     height: 30px;
     margin-left: 70%;
-}
-
-.chekin{
+  }
+  div.chekin {
     width: 100%;
     height: auto;
-    padding-left: 10px;
+    padding-left: 0px;
     display: flex;
-
-}
-
-.infochekin{
-    width: 200px;
-    height: 300px;
-
-}
-
-.infochekin img{
-    width:100px;
-    height:130px;
-    padding-left: 50px;
-}
-
-.infochekin h1{
-   font-size: 20px;
-   text-align: center;
-}
-
-.infochekin p{
+  }
+  div.chekin div.infochekin {
+    width: 180px;
+    height: 400px;
+  }
+  div.chekin div.infochekin img {
+    width: 120px;
+    height: 130px;
+    padding-left: 15px;
+  }
+  div.chekin div.infochekin h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  div.chekin div.infochekin p.parafos {
     padding-top: 10px;
-    font-size: 13px;
+    font-size: 12px;
+    text-align: center;
+    padding-right: 0px;
     margin-left: 6px;
-    margin-right: 6px;
+  }
+  div.chekin div.conteychekin {
+    width: 200px;
+    height: 400px;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck {
+    padding-left: 5px;
+  }
+  .segtitulocheck h2 {
+    padding-right: 20px;
+    font-size: 14px;
+  }
+  div.chekin div.conteychekin div p.parafos {
+    padding-top: 5px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+  }
+  /* falta esta mancueri de las demas */
 }
-
-.conteychekin{
+@media (min-width: 501px) and (max-width: 800px) {
+  .form {
+    margin-left: 10%;
+    margin-right: 0%;
+  }
+  form li img.icon {
+    margin-top: 13px;
+    height: 23px;
+    width: 23px;
+    padding-right: 8px;
+    padding-left: 7px;
+  }
+  form li {
+    text-align: 15px;
+    font-size: 16px;
+    text-decoration: solid;
+    font-style: oblique;
+    padding: right 3px;
+    list-style: none;
+  }
+  input {
+    width: 150px;
+  }
+  form li button {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 70px;
+    height: 30px;
+    font-size: 17px;
+    width: max-content;
+    border-color: rgb(171, 228, 245);
+    background-color: rgb(176, 234, 250);
+  }
+  form li button img.lupa {
+    height: 20px;
+    width: 22px;
+    padding-left: 6px;
+  }
+  div.destinos {
+    margin-top: 30px;
+    margin-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  div.destinos div.nuevo {
+    width: 42%;
+    height: auto;
+    margin-left: 23px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+  }
+  div.destinos div.nuevo p {
+    font-size: 12px;
+  }
+  div.destinos div.nuevo h1 {
+    font-size: 25px;
+  }
+  div.destinos div.nuevo h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    block-size: 23px;
+    font-size: 20px;
+  }
+  div.destinos div.nuevo img {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+  div.chekin {
+    padding: 3%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: max-content;
+  }
+  div.chekin div.infochekin {
+    width: 210px;
+    height: 350px;
+  }
+  div.chekin div.infochekin img {
+    width: 130px;
+    height: 130px;
+    padding-left: 30px;
+  }
+  div.chekin div.infochekin h1 {
+    font-size: 21px;
+  }
+  div.chekin div.infochekin p.parafos {
+    padding-top: 10px;
+    font-size: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  div.chekin div.conteychekin {
     width: 270px;
-    height: 300px;
-
-    
-
-}
-
-.segtitulocheck{
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 5cm;
-    padding-left: 20px;
-}
-
-.segtitulocheck img{
+    height: 350px;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck {
+    padding-left: 10px;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck img {
     width: 15%;
     height: 10%;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 4px;
+    padding-bottom: 5px;
     padding-right: 5px;
-}
-
-.segtitulocheck h2{
-    padding-top: 20px;
-    padding-right: 40px;
-    font-size: 15px;
-}
-
-.parafos{
-    padding-top: 5px;
-    font-size:12px;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck h2 {
+    padding-top: 7px;
+    padding-right: 31px;
+    font-size: 16px;
+  }
+  div.chekin div.conteychekin div p.parafos {
+    padding-top: 3px;
+    font-size: 14px;
     padding-left: 5px;
+    padding-bottom: 6px;
+  }
+  div.informacion {
+    margin-top: 2%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  div.informacion div.plantillainfo {
+    height: 170px;
+    width: 245px;
+    padding-left: 5px;
+    margin-right: 10px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo {
+    margin-left: 0px;
+    padding-right: 5px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo img {
+    padding-top: 2px;
+    width: 43px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo h1 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 5px;
+    margin-top: 13px;
+    padding-bottom: 7px;
+  }
+  div.informacion div.plantillainfo span {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  div.informacion div.plantillainfo a img.flechas {
+    width: 40px;
+    height: 33px;
+    margin-left: 70%;
+  }
+  /* medios de pago */
+  section.fondo div.medio img {
+    width: 80%;
+    height: 60%;
+    margin-top: 22px;
+    margin-left: 12%;
+  }
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  form li img.icon {
+    margin-top: 17px;
+    height: 40px;
+    width: 34px;
+  }
+  form li {
+    font-size: 24px;
+    padding: right 25px;
+  }
+  input {
+    width: 120px;
+    font-size: 16px;
+  }
+  form li button {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 22px;
+    padding-left: 5px;
+  }
+  form li button img.lupa {
+    height: 22px;
+    width: 26px;
+  }
+  div.destinos {
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  div.destinos div.nuevo {
+    width: 46%;
+    height: auto;
+    margin-left: 18px;
+    margin-bottom: 18px;
+    margin-top: 3px;
+  }
+  div.destinos div.nuevo p {
+    font-size: 15px;
+  }
+  div.destinos div.nuevo h1 {
+    font-size: 27px;
+    block-size: 36px;
+  }
+  div.destinos div.nuevo h2 {
+    padding-top: 8px;
+    padding-bottom: 4px;
+    block-size: 25px;
+    font-size: 22px;
+  }
+  div.destinos div.nuevo img {
+    width: 95%;
+    height: auto;
+    padding: 8px;
+  }
+  /* medios de pago */
+  section.fondo {
+    width: 90%;
+    height: 80%;
+    margin-left: 3%;
+  }
+  section.fondo div.medio img {
+    width: 70%;
+    height: 70%;
+  }
+  div.chekin {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    width: 80%;
+    padding-left: 15%;
+  }
+  div.chekin div.infochekin {
+    width: 250px;
+    height: 370px;
+  }
+  div.chekin div.infochekin img {
+    width: 170px;
+    height: 160px;
+    padding-left: 40px;
+  }
+  div.chekin div.infochekin h1 {
+    font-size: 24px;
+  }
+  div.chekin div.infochekin p.parafos {
+    font-size: 16px;
+  }
+  div.chekin div.conteychekin {
+    width: 290px;
+    height: 370px;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck {
+    padding-left: 13px;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck img {
+    width: 18%;
+    height: 10%;
+    padding-top: 10px;
     padding-bottom: 3px;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck h2 {
+    padding-top: 20px;
+    padding-right: 0px;
+    font-size: 19px;
+  }
+  div.chekin div.conteychekin div p.parafos {
+    padding-top: 8px;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 6px;
+  }
+  div.informacion {
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+  div.informacion div.plantillainfo {
+    height: 200px;
+    width: 340px;
+    padding-left: 10px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo {
+    margin-left: 10px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo img {
+    padding-top: 10px;
+    width: 60px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding-bottom: 8px;
+  }
+  div.informacion div.plantillainfo span {
+    font-size: 18px;
+  }
+  div.informacion div.plantillainfo a img.flechas {
+    width: 48px;
+    height: 40px;
+    margin-left: 70%;
+  }
 }
-
-
-
-@media (min-width:330px) and (max-width:499px){  
-
-    
-    .destinos{
-        margin-left:12px;
-    }
-    
-    
-    .nuevo{                                          
-        width: 40%;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    
-    
-    .nuevo p{                                        
-        color: rgb(91, 46, 0);
-        font-size: 8px;
-        padding-top: 6px;
-        padding-bottom: 7px;
-    
-    }
-    
-    .nuevo h1{                                        
-        block-size: 20px;
-        font-size: 16px;
-    
-    }
-    
-    .nuevo h2{
-        padding-top: 3px;
-        padding-bottom: 3px;
-        block-size: 22px;
-        font-size: 17px;
-    }
-    
-    .nuevo img{                                    
-        width: 90%;
-        height: auto ; 
-        padding: 6px;
-    }
-    
-    /* medios de pago */
-    .fondo{
-        margin-left: 4%;
-    }
-    
-    .informacion{
-        margin-top: 7%;
-        display: flex;
-        justify-content: space-between;
-        margin-right: 2px;
-        margin-left: 0px;
-        
-    }
-    
-    .plantillainfo{
-        height:140px ;
-        width: 174px ;
-        padding-left: 3px;
-        padding-right: 5px;
-        padding-bottom: 6px;
-        
-    
-    }
-    
-    .tituloinfo{
-        margin-left: 0px;
-    }
-    
-    .tituloinfo img{
-        width: 33px;
-        padding-left: 1px;
-    }
-    
-    .informacion h1{
-        font-size: 11px;
-        font-family: cursive;
-        text-decoration: underline;
-        font-weight: 500;
-        margin-right: 3px;
-        margin-top: 10px;
-        padding-bottom: 5px;
-    }
-    
-    .plantillainfo span{
-        font-size: 11px;
-        padding-bottom: 3px;
-    }
-    
-    .plantillainfo a{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .flechas{
-        width:40px ;
-        height: 30px;
-        margin-left: 70%;
-    }
-    
-    .chekin{
-        width: 100%;
-        height: auto;
-        padding-left: 0px;
-        display: flex;
-    
-    }
-    
-    .infochekin{
-        width: 180px;
-        height: 300px;
-    
-    }
-    
-    .infochekin img{
-        width:120px;
-        height:130px;
-        padding-left: 15px;
-    }
-    
-    .infochekin h1{
-        font-size: 18px;
-        text-align: center;
-    }
-    
-    .infochekin p{
-        padding-top: 10px;
-        font-size: 11px;
-        text-align: center;
-        padding-right: 0px;
-        margin-left: 6px;
-    }
-    
-    .conteychekin{
-        width: 200px;
-        height: 300px;
-    
-    }
-    
-    .segtitulocheck{
-        padding-left: 5px;
-    }
-    
-    .segtitulocheck h2{
-        padding-right: 20px;
-        font-size: 13px;
-    }
-    
-    .parafos{
-        padding-top: 5px;
-        font-size:10px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 3px;
-    }
-
-
-    /* falta esta mancueri de las demas */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  form li img.icon {
+    margin-top: 17px;
+    height: 45px;
+    width: 36px;
+  }
+  form li {
+    font-size: 27px;
+  }
+  input {
+    width: 170px;
+    font-size: 22px;
+  }
+  form li button {
+    font-size: 25px;
+    padding-left: 6px;
+    height: 50px;
+  }
+  form li button img.lupa {
+    height: 24px;
+    width: 30px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  div.destinos {
+    margin-top: 50px;
+    margin-left: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  div.destinos div.nuevo {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  div.destinos div.nuevo p {
+    font-size: 17px;
+  }
+  div.destinos div.nuevo h1 {
+    font-size: 30px;
+    block-size: 40px;
+  }
+  div.destinos div.nuevo h2 {
+    padding-top: 8px;
+    padding-bottom: 4px;
+    block-size: 25px;
+    font-size: 22px;
+  }
+  div.destinos div.nuevo img {
+    width: 95%;
+    height: auto;
+    padding: 8px;
+  }
+  /* medios de pago */
+  section.fondo {
+    width: 90%;
+    height: 80%;
+    margin-left: 3%;
+  }
+  section.fondo div.medio img {
+    width: 70%;
+    height: 70%;
+  }
+  div.chekin {
+    width: 60%;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    padding-left: 20%;
+  }
+  div.chekin div.infochekin {
+    width: 400px;
+    height: 600px;
+  }
+  div.chekin div.infochekin img {
+    width: 200px;
+    height: 200px;
+    padding-left: 50px;
+  }
+  div.chekin div.infochekin h1 {
+    font-size: 38px;
+  }
+  div.chekin div.infochekin p.parafos {
+    font-size: 25px;
+    padding-top: 14px;
+    margin-left: 2px;
+  }
+  div.chekin div.conteychekin {
+    width: 400px;
+    height: 600px;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck {
+    padding-left: 12px;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck img {
+    width: 18%;
+    height: 10%;
+    padding-bottom: 3px;
+    padding-top: 5;
+  }
+  div.chekin div.conteychekin div div.segtitulocheck h2 {
+    padding-top: 20px;
+    padding-right: 30px;
+    font-size: 28px;
+  }
+  div.chekin div.conteychekin div p.parafos {
+    padding-top: 20px;
+    font-size: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+  }
+  div.informacion {
+    margin-right: 15%;
+    margin-left: 10%;
+  }
+  div.informacion div.plantillainfo {
+    height: 225px;
+    width: 470px;
+    margin-top: 4px;
+    margin-bottom: 60px;
+    padding-left: 10px;
+    margin-left: 30px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo {
+    margin-left: 25px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo img {
+    padding-top: 15px;
+    width: 80px;
+  }
+  div.informacion div.plantillainfo div.tituloinfo h1 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-right: 35px;
+    margin-top: 40px;
+    padding-bottom: 15px;
+  }
+  div.informacion div.plantillainfo span {
+    font-size: 20px;
+  }
+  div.informacion div.plantillainfo a img.flechas {
+    width: 80px;
+    height: 40px;
+    margin-left: 70%;
+  }
 }
-
 /* https://getbootstrap.com/docs/5.0/layout/breakpoints/     interrupción disponibles */
 
-@media (min-width: 501px) and (max-width: 800px) {
-
-    .fonlis2{
-        margin-left: 10%;
-        margin-right:0%;
-    }
-    
-    .icon{
-        margin-top: 13px;
-        height: 23px;
-        width: 23px;
-        padding-right:8px;
-        padding-left:7px;
-    }  
-    
-    .item{
-        text-align: 15px;
-        font-size: 16px;
-        text-decoration: solid;
-        font-style: oblique;
-        padding: right 3px;
-        list-style: none;
-    }
-    
-    
-    input{
-        width: 150px;
-    }
-    
-    .busqueda{
-        margin-top: 20px;
-        margin-bottom: 15px;
-        width: 70px;
-        height: 30px;
-        font-size: 17px;
-        width: max-content;
-        border-color: rgb(171, 228, 245); 
-        background-color: rgb(176, 234, 250); 
-    }
-    
-
-    .lupa{
-        height: 20px;
-        width: 22px;
-        padding-left:6px; 
-
-    }
-
-
-    .destinos{
-        margin-top: 30px;
-        margin-left:40px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    
-    
-    .nuevo{                                          
-        width: 42%;
-        height: auto ;
-        margin-left: 23px;
-        margin-bottom: 13px;
-        margin-top: 13px;
-    }
-    
-    
-    .nuevo p{                                        
-        font-size: 12px;
-    
-    }
-    
-    .nuevo h1{                                        
-        font-size: 25px;
-    
-    }
-    
-    .nuevo h2{
-        padding-top: 5px;
-        padding-bottom: 5px;
-        block-size: 23px;
-        font-size: 20px;
-    }
-    
-    .nuevo img{                                    
-        width: 90%;
-        height: auto; 
-        padding: 10px;
-    }
-    
-
-    .chekin{
-        padding:3%;
-        padding-bottom: 30px;
-        padding-top: 30px;
-        width: max-content;
-    }
-    
-    .infochekin{
-        width: 210px;
-        height: 300px;
-    }
-    
-    .infochekin img{
-        width:130px;
-        height:130px;
-        padding-left: 30px;
-    }
-    
-    .infochekin h1{
-        font-size: 21px;
-    }
-    
-    
-    .infochekin p{
-        padding-top: 10px;
-        font-size: 14px;
-        margin-left: 4px;
-        margin-right: 4px;
-    }
-    
-    .conteychekin{
-        width: 260px;
-        height: 300px;     
-    }
-    
-    .segtitulocheck{
-        padding-left: 10px;
-    }
-    
-
-    .segtitulocheck img{
-        width: 15%;
-        height: 10%;
-        padding-top: 4px;
-        padding-bottom: 5px;
-        padding-right: 5px;
-    }
-    
-
-    .segtitulocheck h2{
-        padding-top: 7px;
-        padding-right:25px;
-        font-size: 16px;
-    }
-    
-
-    .parafos{
-        padding-top: 3px;
-        font-size:13px;
-        padding-left: 5px;
-        padding-bottom: 6px;
-    }
-
-    .informacion{
-        margin-top: 5%;
-        margin-right:10px;
-        margin-left: 10px;
-    }
-    
-    .plantillainfo{
-        height:170px ;
-        width: 245px;
-        padding-left: 5px;
-        margin-right: 10px; 
-    }
-    
-    .tituloinfo{
-        margin-left: 0px;
-        padding-right: 5px;
-    }
-    
-    .tituloinfo img{
-        padding-top:2px;
-        width: 43px;
-    }
-    
-    .informacion h1{
-        font-size: 15px;
-        font-weight: 700;
-        margin-right: 5px;
-        margin-top: 13px;
-        padding-bottom: 7px;
-    }
-    
-    .plantillainfo span{
-        font-size: 14px;
-        padding-bottom: 15px;
-        
-    }
-    
-    .flechas{
-        width:40px ;
-        height: 33px;
-        margin-left: 70%;
-    }
-
-   /* medios de pago */
-    
-   .medio img{
-       width: 80%;
-       height: 60%;
-       margin-top:22px ;
-       margin-left:12% ;
-    }
-
-
-}
-
-
-
-@media (min-width: 801px) and (max-width: 1200px) {
-    
-    
-    .icon{
-        margin-top: 17px;
-        height:40px;
-        width: 34px;
-    }  
-    
-    .item{
-        font-size: 24px;
-        padding: right 25px;
-    }
-    
-    
-    input{
-        width: 120px;
-        font-size: 16px;
-    }
-    
-    .busqueda{
-        margin-top: 25px;
-        margin-bottom: 20px;
-        width: 150px;
-        height: 40px;
-        font-size: 22px;
-        padding-left: 5px;
-    }
-    
-
-    .lupa{
-        height: 22px;
-        width: 26px; 
-       
-    }
-
-
-    .destinos{
-        margin-top: 40px;
-        margin-left:40px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    
-    
-    .nuevo{                                          
-        width: 46%;
-        height: auto ;
-        margin-left: 18px;
-        margin-bottom: 18px;
-        margin-top: 3px;
-    }
-    
-    
-    .nuevo p{                                        
-        font-size: 15px;
-    
-    }
-    
-    .nuevo h1{                                        
-        font-size: 27px;
-        block-size: 36px;
-    }
-    
-    .nuevo h2{
-        padding-top: 8px;
-        padding-bottom: 4px;
-        block-size: 25px;
-        font-size: 22px;
-    }
-    
-    .nuevo img{                                    
-        width: 95%;
-        height: auto; 
-        padding: 8px;
-    }
-
-   /* medios de pago */
-    .fondo{
-       width: 90%;
-       height: 80%;
-       margin-left: 3%;
-  
-    }
-
-    .medio img{
-
-      width: 70%;
-      height: 70%;
-
-    }
-
-
-    .chekin{
-        padding-top: 5%;
-        padding-bottom: 3%;
-        width: 80%;
-        padding-left:15%;
-    }
-    
-    .infochekin{
-       width: 250px;
-       height: 370px;
-    }
-    
-    .infochekin img{
-        width:170px;
-        height:160px;
-        padding-left: 40px;
-    }
-    
-    .infochekin h1{
-       font-size: 24px;
-    }
-    
-    .infochekin p{
-        font-size: 16px;
-
-    }
-    
-    .conteychekin{
-        width: 290px;
-        height: 370px;     
-    }
-    
-    .segtitulocheck{
-        padding-left: 13px;
-    }
-    
-    .segtitulocheck img{
-        width: 18%;
-        height: 10%;
-        padding-top: 10px;
-        padding-bottom: 3px;
-    }
-    
-    .segtitulocheck h2{
-        padding-top: 20px;
-        padding-right:0px;
-        font-size: 19px;
-    }
-    
-    .parafos{
-        padding-top: 8px;
-        font-size:15px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 6px;
-    }
-
-    .informacion{
-        margin-right: 10%;
-        margin-left: 5%;
-        
-    }
-    
-    .plantillainfo{
-        height:200px ;
-        width: 340px;
-        padding-left: 10px; 
-    
-    }
-    
-    .tituloinfo{
-       margin-left: 10px;
-    }
-    
-    .tituloinfo img{
-        padding-top: 10px;
-        width: 60px;
-    }
-    
-    .informacion h1{
-        font-size: 20px;
-        font-weight: 700;
-        margin-right: 30px;
-        margin-top: 20px;
-        padding-bottom: 8px;
-    }
-    
-    .plantillainfo span{
-        font-size: 18px;
-    }
-    
-    .flechas{
-        width:48px ;
-        height: 40px;
-        margin-left: 70%;
-    }
-
-
-}  
-
-
-@media (min-width: 1201px) and (max-width: 1400px) {
-    
-    .icon{
-        margin-top: 17px;
-        height:45px;
-        width: 36px;
-    }  
-    
-    .item{
-        font-size: 27px;
-    }
-    
-    
-    input{
-        width: 170px;
-        font-size: 22px;
-    }
-    
-    .busqueda{
-        font-size: 25px;
-        padding-left: 6px;
-        height: 50px;
-    }
-    
-
-    .lupa{
-        height: 24px;
-        width: 30px;
-        padding-left: 9px;
-        padding-right: 9px;
-    }
-
-    .destinos{
-        margin-top: 50px;
-        margin-left:60px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    
-    .nuevo{                                          
-        margin-left: 50px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    
-    
-    .nuevo p{                                        
-        font-size: 17px;
-    
-    }
-    
-    .nuevo h1{                                        
-        font-size: 30px;
-        block-size: 40px;
-        
-    }
-    
-    .nuevo h2{
-        padding-top: 8px;
-        padding-bottom: 4px;
-        block-size: 25px;
-        font-size: 22px;
-    }
-    
-    .nuevo img{                                    
-        width: 95%;
-        height: auto; 
-        padding: 8px;
-    }
-
-    
-    /* medios de pago */
-    .fondo{
-        width: 90%;
-        height: 80%;
-        margin-left: 3%;
-      
-    }
-    
-    .medio img{
-    
-        width: 70%;
-        height: 70%;
-  
-    }
-
-
-    .chekin{
-        width: 60%;
-        padding-top: 60px;
-        padding-bottom: 0px;
-        padding-left:20%;
-    }
-    
-    .infochekin{
-       width: 400px;
-       height: 600px;
-    }
-    
-    .infochekin img{
-        width:200px;
-        height:200px;
-        padding-left: 50px;
-    }
-    
-    .infochekin h1{
-        font-size: 38px;
-    }
-    
-    .infochekin p{
-        font-size: 25px;
-        padding-top: 14px;
-        margin-left: 2px;
-
-    }
-    
-    .conteychekin{
-        width: 400px;
-        height: 600px;     
-    }
-    
-    .segtitulocheck{
-        padding-left:12px;
-    }
-    
-    .segtitulocheck img{
-        width: 18%;
-        height: 10%;
-        padding-bottom: 3px;
-        padding-top: 5;
-    }
-    
-    .segtitulocheck h2{
-        padding-top: 20px;
-        padding-right:30px;
-        font-size: 28px;
-    }
-    
-    .parafos{
-        padding-top: 20px;
-        font-size:22px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 3px;
-    }
-
-
-    .informacion{
-        margin-right: 15%;
-        margin-left: 10%;
-        
-    }
-    
-    .plantillainfo{
-        height: 225px;
-        width: 470px;
-        margin-top: 4px;
-        margin-bottom: 60px;
-        padding-left: 10px;
-        margin-left: 30px;
-    }
-    
-    .tituloinfo{
-       margin-left: 25px;
-    }
-    
-    .tituloinfo img{
-        padding-top: 15px;
-        width: 80px;
-    }
-    
-    .informacion h1{
-        font-size: 27px;
-        font-weight: 700;
-        margin-right: 35px;
-        margin-top: 40px;
-        padding-bottom:15px;
-    }
-    
-    .plantillainfo span{
-        font-size: 20px;
-    }
-    
-    .flechas{
-        width:80px ;
-        height: 40px;
-        margin-left: 70%;
-    }
-
-
-}
+/*# sourceMappingURL=index.css.map */
