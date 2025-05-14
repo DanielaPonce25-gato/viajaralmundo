@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CHECK-IN/butaca.css">
-    <script defer src="/CHECK-IN/butaca.js"></script>
+    <link rel="stylesheet" href="/check-in/butaca.css">
+    <script defer src="/check-in/butaca.js"></script>
+
     <title>Check-in</title>
 </head>
 <body>
 
+  <iframe id="narvar" src="/views/Navhome.html"frameborder="0"></iframe>  
+        
+  <br><br> <br><br>
+
+  <div class="avion"></div>
+
   <br><br> <br>
 
-  <label for="cantidad">Cantidad de usuarios:</label>
+  <label  for="cantidad">Cantidad de usuarios:</label>
   <input type="number" id="cantidad" min="1" max="10">
 
   <button id="check-in">Check-in</button>
@@ -28,6 +35,18 @@
         <div class="asiento" data-asiento="A3"></div>
       </div>
       <div class="fila">
+        <div class="asiento" data-asiento="A4"></div>
+        <div class="asiento" data-asiento="A5"></div>
+        <div class="asiento" data-asiento="A6"></div>
+      </div>
+    </div>
+    <div class="asientos">
+      <div class="fila">
+        <div class="asiento" data-asiento="A7"></div>
+        <div class="asiento" data-asiento="A8"></div>
+        <div class="asiento" data-asiento="A9"></div>
+      </div>
+      <div class="fila">
         <div class="asiento" data-asiento="B1"></div>
         <div class="asiento" data-asiento="B2"></div>
         <div class="asiento" data-asiento="B3"></div>
@@ -35,26 +54,14 @@
     </div>
     <div class="asientos">
       <div class="fila">
-        <div class="asiento" data-asiento="A1"></div>
-        <div class="asiento" data-asiento="A2"></div>
-        <div class="asiento" data-asiento="A3"></div>
-      </div>
-      <div class="fila">
-        <div class="asiento" data-asiento="B1"></div>
-        <div class="asiento" data-asiento="B2"></div>
-        <div class="asiento" data-asiento="B3"></div>
-      </div>
-    </div>
-    <div class="asientos">
-      <div class="fila">
-        <div class="asiento" data-asiento="B7"></div>
-        <div class="asiento" data-asiento="B8"></div>
-        <div class="asiento" data-asiento="B9"></div>
+        <div class="asiento" data-asiento="B4"></div>
+        <div class="asiento" data-asiento="B5"></div>
+        <div class="asiento" data-asiento="B6"></div>
       </div>
         <div class="fila">
-          <div class="asiento" data-asiento="B1"></div>
-          <div class="asiento" data-asiento="B2"></div>
-          <div class="asiento" data-asiento="B3"></div>
+          <div class="asiento" data-asiento="B7"></div>
+          <div class="asiento" data-asiento="B8"></div>
+          <div class="asiento" data-asiento="B9"></div>
         </div>
     </div>
 
@@ -66,78 +73,81 @@
 
     <div class="asientos">
         <div class="fila">
-          <div class="asiento" data-asiento="A1"></div>
-          <div class="asiento" data-asiento="A2"></div>
-          <div class="asiento" data-asiento="A3"></div>
-          <div class="asiento" data-asiento="B3"></div>
+          <div class="asiento" data-asiento="C1"></div>
+          <div class="asiento" data-asiento="C2"></div>
+          <div class="asiento" data-asiento="C3"></div>
+          <div class="asiento" data-asiento="C4"></div>
         </div>
         <div class="fila">
-          <div class="asiento" data-asiento="B1"></div>
-          <div class="asiento" data-asiento="B2"></div>
-          <div class="asiento" data-asiento="B3"></div>
-          <div class="asiento" data-asiento="B3"></div>
+          <div class="asiento" data-asiento="C5"></div>
+          <div class="asiento" data-asiento="C6"></div>
+          <div class="asiento" data-asiento="C7"></div>
+          <div class="asiento" data-asiento="C8"></div>
         </div>
         
     </div>
     <div class="asientos">
       <div class="fila">
-        <div class="asiento" data-asiento="B7"></div>
-        <div class="asiento" data-asiento="B8"></div>
-        <div class="asiento" data-asiento="B9"></div>
-        <div class="asiento" data-asiento="B3"></div>
+        <div class="asiento" data-asiento="D1"></div>
+        <div class="asiento" data-asiento="D2"></div>
+        <div class="asiento" data-asiento="D3"></div>
+        <div class="asiento" data-asiento="D4"></div>
       </div>
         <div class="fila">
-          <div class="asiento" data-asiento="B1"></div>
-          <div class="asiento" data-asiento="B2"></div>
-          <div class="asiento" data-asiento="B3"></div>
-          <div class="asiento" data-asiento="B3"></div>
+          <div class="asiento" data-asiento="D5"></div>
+          <div class="asiento" data-asiento="D6"></div>
+          <div class="asiento" data-asiento="D7"></div>
+          <div class="asiento" data-asiento="D8"></div>
         </div>
     </div>
     <div class="asientos">
         <div class="fila">
-          <div class="asiento" data-asiento="A1"></div>
-          <div class="asiento" data-asiento="A2"></div>
-          <div class="asiento" data-asiento="A3"></div>
-          <div class="asiento" data-asiento="B3"></div>
+          <div class="asiento" data-asiento="E1"></div>
+          <div class="asiento" data-asiento="E2"></div>
+          <div class="asiento" data-asiento="E3"></div>
+          <div class="asiento" data-asiento="E4"></div>
         </div>
         <div class="fila">
-          <div class="asiento" data-asiento="B1"></div>
-          <div class="asiento" data-asiento="B2"></div>
-          <div class="asiento" data-asiento="B3"></div>
-          <div class="asiento" data-asiento="B3"></div>
+          <div class="asiento" data-asiento="E5"></div>
+          <div class="asiento" data-asiento="E6"></div>
+          <div class="asiento" data-asiento="E7"></div>
+          <div class="asiento" data-asiento="E8"></div>
         </div>
     </div>
     <div class="asientos">
         <div class="fila">
-          <div class="asiento" data-asiento="A1"></div>
-          <div class="asiento" data-asiento="A2"></div>
-          <div class="asiento" data-asiento="A3"></div>
-          <div class="asiento" data-asiento="B3"></div>
+          <div class="asiento" data-asiento="F1"></div>
+          <div class="asiento" data-asiento="F2"></div>
+          <div class="asiento" data-asiento="F3"></div>
+          <div class="asiento" data-asiento="F4"></div>
         </div>
         <div class="fila">
-          <div class="asiento" data-asiento="B1"></div>
-          <div class="asiento" data-asiento="B2"></div>
-          <div class="asiento" data-asiento="B3"></div>
-          <div class="asiento" data-asiento="B3"></div>
+          <div class="asiento" data-asiento="F5"></div>
+          <div class="asiento" data-asiento="F6"></div>
+          <div class="asiento" data-asiento="F7"></div>
+          <div class="asiento" data-asiento="F8"></div>
         </div>
         
     </div>
     <div class="asientos">
       <div class="fila">
-        <div class="asiento" data-asiento="A1"></div>
-        <div class="asiento" data-asiento="A2"></div>
-        <div class="asiento" data-asiento="A3"></div>
-        <div class="asiento" data-asiento="B3"></div>
+        <div class="asiento" data-asiento="G1"></div>
+        <div class="asiento" data-asiento="G2"></div>
+        <div class="asiento" data-asiento="G3"></div>
+        <div class="asiento" data-asiento="G4"></div>
       </div>
       <div class="fila">
-        <div class="asiento" data-asiento="B1"></div>
-        <div class="asiento" data-asiento="B2"></div>
-        <div class="asiento" data-asiento="B3"></div>
-        <div class="asiento" data-asiento="B3"></div>
+        <div class="asiento" data-asiento="G5"></div>
+        <div class="asiento" data-asiento="G6"></div>
+        <div class="asiento" data-asiento="G7"></div>
+        <div class="asiento" data-asiento="G8"></div>
       </div>
     </div>
   </div>
   <img class="ala trasera" src="/CHECK-IN/cola-avion.png">
+
+  <iframe id="pie" src="/views/piedepagina.html"frameborder="0"></iframe>  
+
 
 </body>
 </html>

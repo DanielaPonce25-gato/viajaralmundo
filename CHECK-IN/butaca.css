@@ -1,12 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+iframe {
+  display: flex;
+  position: absolute;
+}
+
+#pie {
+  width: 100%;
+}
+
+#narvar {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-image: url("cielo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120em;
+  height: 126em;
   margin: 0%;
   padding: 0%;
 }
 
+.avion {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  left: 0%;
+  background-image: url("avion.png");
+  background-size: cover;
+  animation: volar 5s infinite;
+}
+
+@keyframes volar {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(300px) rotate(-10deg) scale(1.2);
+  }
+}
 label {
   font-weight: 700;
   font-size: 23px;
@@ -95,46 +132,84 @@ button {
 }
 
 @media (min-width: 330px) and (max-width: 499px) {
+  .avion {
+    width: 150px;
+    height: 100px;
+    animation: volar-small 5s infinite;
+  }
+  @keyframes volar-small {
+    0% {
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    25% {
+      transform: translateX(100px) rotate(-10deg);
+    }
+    50% {
+      transform: translateX(130px) rotate(0deg) scale(1.2);
+    }
+    75% {
+      transform: translateX(180px) rotate(-10deg);
+    }
+    90% {
+      opacity: 1;
+    }
+  }
+  body {
+    height: 107em;
+  }
   label {
-    font-size: 25px;
-    margin-left: 6%;
+    font-size: 30px;
+    margin-left: 3%;
   }
   input {
-    width: 60px;
-    height: 20px;
+    width: 70px;
+    height: 22px;
+    margin-top: 10px;
+    margin-left: 30%;
+    font-size: 22px;
   }
   button {
-    margin-left: 90%;
+    margin-left: 50%;
     margin-top: 20px;
     margin-right: 20px;
-    width: 25%;
+    font-size: 19px;
+    width: 40%;
+    height: 40px;
   }
   .mensaje {
     margin-left: 10%;
-    font-size: 20px;
+    font-size: 26px;
   }
   .contenedor {
     margin-left: 20%;
   }
   .ala {
     width: 90px;
-    height: 500px;
-    margin-left: 43%;
+    height: 330px;
+    margin-left: 38%;
   }
   .trasera {
-    height: 265px;
-    margin-left: 60%;
+    height: 200px;
+    margin-left: 54%;
   }
   .trompa {
     padding-bottom: 0px;
-    height: 190px;
-    margin-left: 50%;
+    height: 170px;
+    margin-left: 45%;
   }
   .asiento {
     margin: 4px; /* Espacio entre las alas y los asientos */
   }
 }
 @media (min-width: 501px) and (max-width: 800px) {
+  .avion {
+    width: 200px;
+    height: 100px;
+  }
+  body {
+    height: 126em;
+  }
   label {
     font-size: 25px;
     margin-left: 8%;
@@ -154,7 +229,7 @@ button {
   }
   .ala {
     width: 100px;
-    height: 540px;
+    height: 500px;
     margin-left: 40%;
   }
   .trasera {
@@ -168,12 +243,32 @@ button {
   }
 }
 @media (min-width: 801px) and (max-width: 1200px) {
+  .avion {
+    width: 300px;
+    height: 200px;
+  }
+  @keyframes volar {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      transform: translateX(300px) rotate(-10deg) scale(1.2);
+    }
+    50% {
+      transform: translateX(500px) rotate(0deg) scale(1.2);
+    }
+  }
+  body {
+    height: 151em;
+  }
   label {
     font-size: 30px;
     margin-left: 15%;
   }
   input {
     font-size: 23px;
+    width: 90px;
+    height: 28px;
   }
   button {
     font-size: 23px;
@@ -197,7 +292,80 @@ button {
   .trompa {
     padding-bottom: 0px;
     height: 190px;
+    margin-bottom: 20px;
     margin-left: 40%;
+  }
+  .asiento {
+    width: 45px;
+    height: 40px;
+    background-color: #605858;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .avion {
+    width: 300px;
+    height: 200px;
+  }
+  @keyframes volar {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      transform: translateX(300px) rotate(-10deg) scale(1.2);
+    }
+    50% {
+      transform: translateX(500px) rotate(0deg) scale(1.2);
+    }
+    75% {
+      transform: translateX(600px) rotate(-10deg);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(1000px) translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+  }
+  label {
+    font-size: 50px;
+    margin-left: 15%;
+  }
+  input {
+    font-size: 33px;
+  }
+  body {
+    height: 167em;
+  }
+  button {
+    font-size: 36px;
+    width: 20%;
+    height: 70px;
+  }
+  .mensaje {
+    font-size: 36px;
+    margin-left: 20%;
+  }
+  .ala {
+    width: 200px;
+    height: 600px;
+    margin-left: 40%;
+  }
+  .trasera {
+    height: 300px;
+    margin-left: 50%;
+    padding: 0%;
+  }
+  .trompa {
+    padding-bottom: 0px;
+    height: 200px;
+    margin-left: 42%;
+    margin-bottom: 40px;
+  }
+  .asiento {
+    width: 60px;
+    height: 50px;
+    background-color: #605858;
   }
 }
 

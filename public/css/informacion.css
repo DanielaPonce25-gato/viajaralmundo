@@ -21,6 +21,16 @@ main {
   background-color: rgba(172, 243, 250, 0.3215686275);
 }
 
+section.texto div.conexion h2, section.texto div h2, section.indice h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+section.texto div p a, section.indice ul li.item a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 /* Anidamiento */
 section.indice {
   background-color: rgba(255, 255, 0, 0.32);
@@ -36,9 +46,7 @@ section.indice {
   border-color: rgb(5, 255, 226);
 }
 section.indice h1 {
-  text-align: center;
   font-size: 22px;
-  text-decoration: underline;
   font-weight: 700;
   font-style: italic;
 }
@@ -48,7 +56,6 @@ section.indice ul li.item {
   padding-bottom: 6px;
 }
 section.indice ul li.item a {
-  text-decoration: none;
   margin-left: 7%;
   font-size: 16px;
   font-style: unset;
@@ -69,8 +76,6 @@ section.texto div h2 {
   font-size: 26px;
   padding-bottom: 10px;
   color: #94570b;
-  text-align: center;
-  text-decoration: underline;
 }
 section.texto div h3 {
   text-align: left;
@@ -90,8 +95,6 @@ section.texto div p {
 }
 section.texto div p a {
   color: blue;
-  text-decoration: none;
-  font-weight: 700;
   font-size: 14px;
 }
 section.texto div table {
@@ -112,8 +115,6 @@ section.texto div.conexion h2 {
   font-size: 26px;
   padding-bottom: 10px;
   color: #94570b;
-  text-align: center;
-  text-decoration: underline;
 }
 section.texto div.conexion h3 {
   text-align: left;

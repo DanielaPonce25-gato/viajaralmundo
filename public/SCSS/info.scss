@@ -22,6 +22,19 @@ main{
     background-color:#acf3fa52 
 }
 
+
+// Definimos los estilos base para los títulos
+%titulo {
+    text-align: center;
+    text-decoration: underline;
+}
+
+// Definimos los estilos base para los enlaces
+%enlace {
+    text-decoration: none;
+    font-weight: 700;
+}
+
 /* Anidamiento */
 
 section.indice{
@@ -39,10 +52,8 @@ section.indice{
     border-color: rgb(5, 255, 226);
 
     h1{
-
-        text-align: center;
+        @extend %titulo;
         font-size:22px ;
-        text-decoration: underline;
         font-weight: 700;
         font-style: italic;
 
@@ -58,7 +69,7 @@ section.indice{
 
             a{
 
-                text-decoration: none;
+                @extend %enlace;
                 margin-left: 7%;
                 font-size: 16px;
                 font-style: unset;
@@ -86,12 +97,10 @@ section.texto{
         margin-bottom: 10px;
 
         h2{
-
+            @extend %titulo;
             font-size: 26px;
             padding-bottom: 10px;
             color: #94570b;
-            text-align: center;
-            text-decoration: underline;
 
         }
 
@@ -120,8 +129,7 @@ section.texto{
             a{
 
                 color: blue;
-                text-decoration: none;
-                font-weight: 700;
+                @extend %enlace;
                 font-size: 14px;
             }
 
@@ -168,8 +176,7 @@ section.texto{
             font-size: 26px;
             padding-bottom: 10px;
             color: #94570b;
-            text-align: center;
-            text-decoration: underline;
+            @extend %titulo;
 
         }
 
@@ -192,6 +199,7 @@ section.texto{
 
         }
     }
+    
 
 }
 
