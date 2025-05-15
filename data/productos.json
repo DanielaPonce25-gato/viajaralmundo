@@ -1,0 +1,58 @@
+[
+ {
+  "id": 1,
+  "lugar": "Colombia",
+  "imagen": "1743441086282-1743432376882-Barbados.jpg",
+  "descripcion": "Hermoso",
+  "precio": "18000000",
+  "millasacumulables": "80000"
+ },
+ {
+  "id": 2,
+  "lugar": "Dubai",
+  "imagen": "1743432489139-dubai.jpeg",
+  "descripcion": "Pintoresco",
+  "precio": "19450000",
+  "millasacumulables": "340000"
+ },
+ {
+  "id": 3,
+  "lugar": "Chile",
+  "imagen": "1743432592036-chile.jpg",
+  "descripcion": "Hermosa ciudad",
+  "precio": "29000000",
+  "millasacumulables": "450000"
+ },
+ {
+  "id": 4,
+  "lugar": "Aruba",
+  "imagen": "1743343551960-sanmaarten.jpeg",
+  "descripcion": "Un lugar paraiso",
+  "precio": "6969",
+  "millasacumulables": "4567"
+ },
+ {
+  "id": 5,
+  "lugar": "salta",
+  "imagen": "1743432955747-1743432888989-salta.jpeg",
+  "descripcion": "Un lugar paraiso",
+  "precio": "34000",
+  "millasacumulables": "40666"
+ },
+ {
+  "id": 6,
+  "lugar": "Aruba",
+  "imagen": "1743441353978-1743343551960-sanmaarten.jpeg",
+  "descripcion": "Un lugar paraiso",
+  "precio": "45000",
+  "millasacumulables": "34567"
+ },
+ {
+  "id": 7,
+  "lugar": "curazao",
+  "imagen": "1743571140760-curacao.jpg",
+  "descripcion": "Hermoso paraíso",
+  "precio": "45.0000",
+  "millasacumulables": "50.000"
+ }
+]

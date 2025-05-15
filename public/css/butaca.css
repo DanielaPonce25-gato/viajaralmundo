@@ -18,7 +18,7 @@ iframe {
 }
 
 body {
-  background-image: url("cielo.jpeg");
+  background-image: url("/public/imagenes/check-in/cielo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 126em;
@@ -31,7 +31,7 @@ body {
   width: 150px;
   height: 100px;
   left: 0%;
-  background-image: url("avion.png");
+  background-image: url("/public/imagenes/check-in/Avion.png");
   background-size: cover;
   animation: volar 5s infinite;
 }

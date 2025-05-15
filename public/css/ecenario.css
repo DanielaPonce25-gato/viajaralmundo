@@ -1,0 +1,207 @@
+@charset "UTF-8";
+.cielo {
+  position: initial;
+  width: 100%;
+  height: 2000px;
+  background-color: rgba(131, 209, 238, 0.4823529412);
+}
+
+.sol {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: #F2C464;
+  border-radius: 50%;
+}
+
+.nube3, .nube2, .nube {
+  position: absolute;
+  border-radius: 50%;
+  animation: nube 11s infinite;
+}
+
+@keyframes nube {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(900px);
+  }
+}
+.nube {
+  top: 380px;
+  left: 0px;
+  width: 120px;
+  height: 65px;
+  background-color: rgb(241, 245, 212);
+}
+
+.nube2 {
+  top: 350px;
+  left: 40px;
+  width: 90px;
+  height: 70px;
+  background-color: rgb(237, 245, 179);
+}
+
+.nube3 {
+  top: 370px;
+  left: 50px;
+  width: 100px;
+  height: 70px;
+  background-color: rgb(237, 250, 137);
+}
+
+.avion {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  width: 300px;
+  height: 150px;
+  background-image: url("/ecenario/Avion.png"); /* Reemplaza con la imagen de un avión */
+  background-size: cover;
+  animation: volar 8s infinite;
+}
+
+@keyframes volar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(500px) rotate(0deg) scale(1.2);
+  }
+  75% {
+    transform: translateX(600px) rotate(-10deg);
+  }
+}
+@media (min-width: 330px) and (max-width: 499px) {
+  .cielo {
+    height: 800px;
+  }
+  .nube {
+    top: 380px;
+    left: 0px;
+    width: 100px;
+    height: 65px;
+    background-color: rgb(241, 245, 212);
+  }
+  .nube2 {
+    top: 350px;
+    left: 40px;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(237, 245, 179);
+  }
+  .nube3 {
+    top: 370px;
+    left: 50px;
+    width: 80px;
+    height: 70px;
+    background-color: rgb(237, 250, 137);
+  }
+  @keyframes nube {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(330px);
+    }
+  }
+  .avion {
+    width: 150px;
+    height: 100px;
+    margin-top: 70%;
+    animation: volar-small 5s infinite;
+  }
+  @keyframes volar-small {
+    0% {
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    25% {
+      transform: translateX(100px) rotate(-10deg);
+    }
+    50% {
+      transform: translateX(130px) rotate(0deg) scale(1.2);
+    }
+    75% {
+      transform: translateX(180px) rotate(-10deg);
+    }
+    90% {
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .cielo {
+    width: 170%;
+    height: 4000px;
+    background-color: rgba(131, 209, 238, 0.4823529412);
+  }
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  .avion {
+    width: 300px;
+    height: 200px;
+  }
+  @keyframes volar {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      transform: translateX(300px) rotate(-10deg) scale(1.2);
+    }
+    50% {
+      transform: translateX(500px) rotate(0deg) scale(1.2);
+    }
+  }
+  .nube {
+    top: 400px;
+    left: 0px;
+    width: 120px;
+    height: 65px;
+    background-color: rgb(241, 245, 212);
+  }
+  .nube2 {
+    top: 380px;
+    left: 40px;
+    width: 90px;
+    height: 70px;
+    background-color: rgb(237, 245, 179);
+  }
+  .nube3 {
+    top: 400px;
+    left: 50px;
+    width: 100px;
+    height: 70px;
+    background-color: rgb(237, 250, 137);
+  }
+}
+/*     @keyframes volar {
+    0% {
+    opacity: 1;
+    }
+    25% {
+    transform: translateX(300px) rotate(-10deg) scale(1.2);
+    }
+    50% {
+    transform: translateX(500px) rotate(0deg) scale(1.2);
+    }
+    75% {
+    transform: translateX(600px) rotate(-10deg);
+    }  
+    90% {
+    opacity: 1;
+    } 
+    100% {
+    transform: translateX(1000px) translateY(0) rotate(0deg);
+    opacity: 0;
+    }  
+    }
+
+
+ */
+
+/*# sourceMappingURL=ecenario.css.map */
