@@ -25,7 +25,7 @@ asientos.forEach((asiento) => {
 checkInButton.addEventListener('click', () => {
   const cantidad = parseInt(cantidadInput.value);
   if (!cantidad || cantidad < 1) {
-    mensaje.textContent = 'Por favor, ingresa una cantidad válida de usuarios.';
+    mensaje.textContent = 'Por favor, ingresa una cantidad de usuarios.';
     return;
   }
 
