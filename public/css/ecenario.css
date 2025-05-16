@@ -60,7 +60,7 @@
   top: 200px;
   width: 300px;
   height: 150px;
-  background-image: url("/ecenario/Avion.png"); /* Reemplaza con la imagen de un avión */
+  background-image: url("/public/imagenes/check-in/Avion.png"); /* Reemplaza con la imagen de un avión */
   background-size: cover;
   animation: volar 8s infinite;
 }
@@ -76,6 +76,8 @@
     transform: translateX(600px) rotate(-10deg);
   }
 }
+
+
 @media (min-width: 330px) and (max-width: 499px) {
   .cielo {
     height: 800px;
@@ -134,6 +136,8 @@
     }
   }
 }
+
+
 @media (min-width: 501px) and (max-width: 800px) {
   .cielo {
     width: 170%;
@@ -141,6 +145,8 @@
     background-color: rgba(131, 209, 238, 0.4823529412);
   }
 }
+
+
 @media (min-width: 801px) and (max-width: 1200px) {
   .avion {
     width: 300px;
@@ -179,29 +185,51 @@
     background-color: rgb(237, 250, 137);
   }
 }
-/*     @keyframes volar {
+
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  @keyframes volar {
     0% {
-    opacity: 1;
+      opacity: 1;
     }
     25% {
-    transform: translateX(300px) rotate(-10deg) scale(1.2);
+      transform: translateX(300px) rotate(-10deg) scale(1.2);
     }
     50% {
-    transform: translateX(500px) rotate(0deg) scale(1.2);
+      transform: translateX(500px) rotate(0deg) scale(1.2);
     }
     75% {
-    transform: translateX(600px) rotate(-10deg);
-    }  
-    90% {
-    opacity: 1;
-    } 
-    100% {
-    transform: translateX(1000px) translateY(0) rotate(0deg);
-    opacity: 0;
-    }  
+      transform: translateX(600px) rotate(-10deg);
     }
-
-
- */
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(1000px) translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+  }
+  .nube {
+    top: 500px;
+    left: 0px;
+    width: 200px;
+    height: 120px;
+    background-color: rgb(241, 245, 212);
+  }
+  .nube2 {
+    top: 460px;
+    left: 30px;
+    width: 160px;
+    height: 100px;
+    background-color: rgb(237, 245, 179);
+  }
+  .nube3 {
+    top: 500px;
+    left: 70px;
+    width: 170px;
+    height: 120px;
+    background-color: rgb(237, 250, 137);
+  }
+}
 
 /*# sourceMappingURL=ecenario.css.map */

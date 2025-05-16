@@ -173,6 +173,7 @@
 
 }
 
+
 @media (min-width: 801px) and (max-width: 1200px) {
 
 
@@ -220,28 +221,48 @@
 
 }
 
-//media 1201 a 1400
-/*     @keyframes volar {
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  @keyframes volar {
     0% {
-    opacity: 1;
+      opacity: 1;
     }
     25% {
-    transform: translateX(300px) rotate(-10deg) scale(1.2);
+      transform: translateX(300px) rotate(-10deg) scale(1.2);
     }
     50% {
-    transform: translateX(500px) rotate(0deg) scale(1.2);
+      transform: translateX(500px) rotate(0deg) scale(1.2);
     }
     75% {
-    transform: translateX(600px) rotate(-10deg);
-    }  
-    90% {
-    opacity: 1;
-    } 
-    100% {
-    transform: translateX(1000px) translateY(0) rotate(0deg);
-    opacity: 0;
-    }  
+      transform: translateX(600px) rotate(-10deg);
     }
-
-
- */
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(1000px) translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+  }
+  .nube {
+    top: 500px;
+    left: 0px;
+    width: 200px;
+    height: 120px;
+    background-color: rgb(241, 245, 212);
+  }
+  .nube2 {
+    top: 460px;
+    left: 30px;
+    width: 160px;
+    height: 100px;
+    background-color: rgb(237, 245, 179);
+  }
+  .nube3 {
+    top: 500px;
+    left: 70px;
+    width: 170px;
+    height: 120px;
+    background-color: rgb(237, 250, 137);
+  }
+}
