@@ -3,7 +3,7 @@
   position: initial;
   width: 100%;
   height: 2000px;
-  background-color: #83d1ee7b;
+  background-image: radial-gradient(circle, rgb(255, 204, 0),rgba(251, 42, 42, 0.938),rgb(255, 153, 0), rgb(227, 242, 95)); /* los gradientes raduales se expanden desde adentro hacia afuera */
 }
 
 .sol {
@@ -12,9 +12,11 @@
   right: 50px;
   width: 100px;
   height: 100px;
-  background-color: #F2C464;
+  background-color: #faba3a;
   border-radius: 50%;
 }
+
+
 
 
 %nube{
@@ -64,14 +66,13 @@
   }
 
 
-
 .avion {
   position: absolute;
   left: 0;
   top: 200px;
   width: 300px;
   height: 150px;
-  background-image: url('/ecenario/Avion.png'); /* Reemplaza con la imagen de un avión */
+  background-image: url('/public/imagenes/check-in/Avion.png'); /* Reemplaza con la imagen de un avión */
   background-size: cover;
   animation: volar 8s infinite;
 }
