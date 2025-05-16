@@ -10,19 +10,23 @@
 </head>
 <body>
 
-  <iframe id="narvar" src="/views/Navhome.html"frameborder="0"></iframe>  
-        
-  <br><br> <br><br>
+  <!-- <iframe id="narvar" src="/views/Navhome.html"frameborder="0"></iframe>   -->  <!-- el javacrisp de nav interfiere el proceso de javacrisp de butaca -->
 
   <div class="avion"></div>
 
   <br><br> <br>
 
-  <label  for="cantidad">Cantidad de usuarios:</label>
+  <label for="cantidad">Cantidad de usuarios:</label>
   <input type="number" id="cantidad" min="1" max="10">
 
   <button id="check-in">Check-in</button>
   <div class="mensaje" id="mensaje"></div>
+
+  <br><br>
+
+  <button class="volver"><a href="/index.html" target="_blank"> Volver al Home</a></button>
+
+  <br><br>
 
   <img class="ala trompa" src="/public/imagenes/check-in/trompa-avion.png">
 
@@ -145,6 +149,7 @@
     </div>
   </div>
   <img class="ala trasera" src="/public/imagenes/check-in/cola-avion.png">
+
 
   <iframe id="pie" src="/views/piedepagina.html"frameborder="0"></iframe>  
 

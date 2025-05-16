@@ -39,3 +39,4 @@ checkInButton.addEventListener('click', () => {
     mensaje.textContent = `Selecciona ${cantidad} asiento(s) antes de hacer check-in.`;
   }
 });
+

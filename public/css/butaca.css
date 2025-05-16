@@ -21,7 +21,7 @@ body {
   background-image: url("/public/imagenes/check-in/cielo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 126em;
+  height: 130em;
   margin: 0%;
   padding: 0%;
 }
@@ -64,6 +64,26 @@ button {
   height: 30px;
   color: black;
   font-weight: 800;
+}
+
+.volver {
+  background-color: rgb(228, 204, 231);
+  height: 40px;
+  width: max-content;
+  padding: 5px;
+  border-radius: 6%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(184, 2, 187);
+  margin: 0 auto 30px;
+  margin-left: 40px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
 }
 
 .mensaje {
@@ -123,9 +143,11 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .asiento.seleccionado {
   background-color: #0f0;
 }
+
 .asiento.ocupado {
   background-color: #f00;
   cursor: not-allowed;
@@ -181,6 +203,15 @@ button {
     margin-left: 10%;
     font-size: 26px;
   }
+  .volver {
+    height: 45px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-width: 5px;
+    font-size: 16px;
+  }
   .contenedor {
     margin-left: 20%;
   }
@@ -208,7 +239,7 @@ button {
     height: 100px;
   }
   body {
-    height: 126em;
+    height: 131em;
   }
   label {
     font-size: 25px;
@@ -219,10 +250,19 @@ button {
   }
   button {
     width: 20%;
+    font-size: 16px;
     height: 30px;
   }
   .mensaje {
     font-size: 19px;
+  }
+  .volver {
+    height: 48px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 11px;
+    border-width: 5px;
+    font-size: 17px;
   }
   .contenedor {
     margin: 0%;
@@ -259,7 +299,7 @@ button {
     }
   }
   body {
-    height: 151em;
+    height: 157em;
   }
   label {
     font-size: 30px;
@@ -278,6 +318,14 @@ button {
   .mensaje {
     font-size: 22px;
     margin-left: 20%;
+  }
+  .volver {
+    height: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 13px;
+    border-width: 7px;
+    font-size: 18px;
   }
   .ala {
     width: 180px;
@@ -335,7 +383,7 @@ button {
     font-size: 33px;
   }
   body {
-    height: 167em;
+    height: 174em;
   }
   button {
     font-size: 36px;
@@ -345,6 +393,14 @@ button {
   .mensaje {
     font-size: 36px;
     margin-left: 20%;
+  }
+  .volver {
+    height: 55px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 13px;
+    border-width: 7px;
+    font-size: 22px;
   }
   .ala {
     width: 200px;
